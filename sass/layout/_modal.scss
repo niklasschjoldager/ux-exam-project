@@ -9,6 +9,7 @@
     background-color: vars.$color-white;
     border: none;
     box-shadow: vars.$box-shadow;
+    z-index: 100;
     &__title{
         text-align: center;
     }
@@ -47,7 +48,7 @@
             border-bottom: 1px solid vars.$color-primary;
         }
 
-        .file-input{
+        &.file-input{
             background-color: transparent;
             padding: vars.$space-xs;
             cursor: pointer;
@@ -71,7 +72,8 @@
         transition: .2s;
         font-family: vars.$font-title;
         &:hover{
-            background-color: #4a897f;
+            // background-color: #4a897f;
+            background-color: vars.$color-tertiary;
         }
     }
 

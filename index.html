@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -81,12 +82,168 @@
                 <div class="popular-recipes__container"></div>
             </section>
         </main>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Cooklish | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="navigation_wrapper">
+      <div class="navigation">
+        <a class="logo" href="./index.html">Cooklish</a>
+        <div class="burger_icon"></div>
+        <nav>
+          <a href="./explore.html">Explore</a>
+          <a href="./account.html">Account</a>
+          <a href="./search.html">Search</a>
+        </nav>
+      </div>
+    </div>
+    <dialog open class="sign-up modal">
+      <h2 class="modal__title">Sign Up</h2>
+      <form class="modal__form" method="dialog">
+        <label class="modal__label"
+          >Your name
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="person">
+                <rect width="24" height="24" opacity="0" />
+                <path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z" />
+                <path d="M12 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="text" />
+        </label>
 
-        <template class="popular-recipes-template">
-            <article class="recipe">
-                <img class="recipe__img" src="" alt="">
-                <h4 class="recipe__title"></h4>
-            </article>
-        </template>
-    </body>
+        <label class="modal__label"
+          >Your email
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="email">
+                <rect width="24" height="24" opacity="0" />
+                <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="email" />
+        </label>
+
+        <label class="modal__label"
+          >Your password
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="lock">
+                <rect width="24" height="24" opacity="0" />
+                <path
+                  d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1z"
+                />
+                <path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="password" />
+        </label>
+
+        <label class="modal__label"
+          >Your profile image
+          <input class="modal__input file-input" type="file" accept="image/*" />
+        </label>
+
+        <button class="modal__button" type="submit">sign up</button>
+      </form>
+    </dialog>
+    <dialog class="sign-in modal">
+      <h2 class="modal__title">Sign in</h2>
+      <form class="modal__form" method="dialog">
+        <label class="modal__label"
+          >Your email
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="email">
+                <rect width="24" height="24" opacity="0" />
+                <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="email" />
+        </label>
+
+        <label class="modal__label"
+          >Your password
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="lock">
+                <rect width="24" height="24" opacity="0" />
+                <path
+                  d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1z"
+                />
+                <path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="password" />
+        </label>
+
+        <label class="modal__label"
+          >Your email
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="email">
+                <rect width="24" height="24" opacity="0" />
+                <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="email" />
+        </label>
+
+        <label class="modal__label"
+          >Your password
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g data-name="Layer 2">
+              <g data-name="lock">
+                <rect width="24" height="24" opacity="0" />
+                <path
+                  d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1z"
+                />
+                <path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" />
+              </g>
+            </g>
+          </svg>
+          <input class="modal__input" type="password" />
+        </label>
+
+        <button class="modal__button" type="submit">sign in</button>
+        <a class="modal__forgot" href="/">Forgot your password?</a>
+      </form>
+    </dialog>
+    <section class="hero-banner">
+      <div class="hero-banner__overlay"></div>
+      <div class="hero-banner__search-wrapper">
+        <label class="hero-banner__label text-xl">What are you looking for?</label>
+        <input class="hero-banner__searchfield" type="text" name="search" autocomplete="off" />
+      </div>
+      <img class="hero-banner__img" src="./images/edgar-castrejon-4Q_xlBOaCso-unsplash.jpg" alt="" />
+    </section>
+    <section class="popular-recipes">
+      <h2 class="popular-recipes__title">Popular recipes</h2>
+      <div class="popular-recipes__container"></div>
+    </section>
+>>>>>>> 92137e70aa972c50c83e896b989f8380c56fd86c
+
+    <template class="popular-recipes-template">
+      <article class="recipe">
+        <img class="recipe__img" src="" alt="" />
+        <h4 class="recipe__title"></h4>
+      </article>
+    </template>
+  </body>
 </html>
