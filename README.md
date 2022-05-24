@@ -1,1 +1,1 @@
-This is the prototype for cooklish.com - recipes ✨
+This is the prototype for cooklish.com - recipes 🍝✨
