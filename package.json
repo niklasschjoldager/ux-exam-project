@@ -1,0 +1,22 @@
+{
+  "name": "ux-exam-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass sass/index.scss css/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklasschjoldager/ux-exam-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niklasschjoldager/ux-exam-project/issues"
+  },
+  "homepage": "https://github.com/niklasschjoldager/ux-exam-project#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
