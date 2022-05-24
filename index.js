@@ -8,3 +8,10 @@ function toggleMenu(){
     });
 }
 
+async function getData() {
+    const JSONData = await
+    fetch("./data/recipes.json");
+    recipes = await JSONData.json();
+    console.log(recipes);
+    return recipes;
+}

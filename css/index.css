@@ -14,6 +14,7 @@ body {
   font-family: "Palanquin", sans-serif;
   line-height: 1.75rem;
   min-height: 100%;
+  background-color: #f5f5f5;
 }
 
 h1,
@@ -382,13 +383,13 @@ h1 {
 }
 
 .search {
+  display: flex;
   position: relative;
-  margin: 4rem auto;
+  margin: 4rem auto 1.5rem;
   width: 80%;
   max-width: 800px;
 }
 .search__input {
-  position: absolute;
   width: 100%;
   height: 30px;
   padding: 0.75rem;
@@ -410,6 +411,42 @@ h1 {
   right: 0;
   background: transparent;
   border: 0;
+}
+
+.search-facets {
+  overflow: hidden;
+  position: relative;
+}
+.search-facets__gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  background: linear-gradient(to right, #f5f5f5, rgba(0, 0, 0, 0) 5% 95%, #f5f5f5);
+  pointer-events: none;
+}
+.search-facets__list {
+  display: flex;
+  overflow-x: scroll;
+}
+@media (min-width: 1024px) {
+  .search-facets__list {
+    justify-content: center;
+  }
+}
+.search-facets__item {
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0.2rem 1.25rem;
+  border: 1px solid #579e93;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.search-facets__item:hover {
+  background-color: #579e93;
+  color: white;
 }
 
 .styletile {
