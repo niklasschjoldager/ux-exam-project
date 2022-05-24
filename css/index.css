@@ -29,7 +29,7 @@ h6 {
 h1 {
   text-align: center;
   font-size: 3rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .text-sm {
@@ -373,7 +373,9 @@ h1 {
 
 .search {
   position: relative;
-  margin-top: 4rem;
+  margin: 4rem auto;
+  width: 80%;
+  max-width: 800px;
 }
 .search__input {
   position: absolute;
