@@ -6,11 +6,12 @@
     margin-inline: auto;
 }
 
-
-section{
-    margin: vars.$space-xl;
+main{
     max-width: vars.$max-width;
     margin: 0 auto;
+}
+section{
+    margin: vars.$space-xl;
 
     @media screen and (max-width: vars.$breakpoint-sm) {
         margin: vars.$space-3xl;

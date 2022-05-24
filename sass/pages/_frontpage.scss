@@ -8,12 +8,6 @@
     position: relative;
     margin: 0;
 
-    margin: -(vars.$space-xl);
-
-    @media screen and (max-width: vars.$breakpoint-sm) {
-        margin: -(vars.$space-3xl);
-    }  
-
     &__img{
         width: 100vw;
         height: 70vh;
