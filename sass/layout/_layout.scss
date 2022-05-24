@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as vars;
+
+.container {
+    padding-inline: vars.$space-md;
+    width: min(100%, vars.$max-width);
+    margin-inline: auto;
+}
