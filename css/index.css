@@ -241,13 +241,10 @@ h1 {
   margin-inline: auto;
 }
 
-body {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 section {
   margin: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 640px) {
   section {
@@ -335,10 +332,21 @@ section {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.frontpage {
+  position: relative;
+}
+
 .hero-banner {
   width: 100vw;
   height: 70vh;
   position: relative;
+  margin: 0;
+  margin: -1.5rem;
+}
+@media screen and (max-width: 640px) {
+  .hero-banner {
+    margin: -3rem;
+  }
 }
 .hero-banner__img {
   width: 100vw;

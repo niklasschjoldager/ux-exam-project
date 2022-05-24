@@ -1,9 +1,18 @@
 @use "../abstracts/variables" as vars;
-
+.frontpage{
+    position: relative;
+}
 .hero-banner{
     width: 100vw;
     height: 70vh;
     position: relative;
+    margin: 0;
+
+    margin: -(vars.$space-xl);
+
+    @media screen and (max-width: vars.$breakpoint-sm) {
+        margin: -(vars.$space-3xl);
+    }  
 
     &__img{
         width: 100vw;
