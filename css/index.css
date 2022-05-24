@@ -124,11 +124,21 @@ h1 {
   justify-content: space-between;
   padding-right: 1.5rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
   .navigation_wrapper .navigation {
     align-items: center;
     justify-content: flex-end;
   }
+}
+.navigation_wrapper .navigation.active .burger_icon {
+  background-image: url(../icons/close-outline.svg);
+  transition: 0.3s;
+}
+.navigation_wrapper .navigation.active nav {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: 0.3s;
 }
 .navigation_wrapper .navigation nav {
   position: absolute;
@@ -141,6 +151,10 @@ h1 {
   width: 200px;
   text-align: center;
   box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s;
 }
 @media screen and (min-width: 1024px) {
   .navigation_wrapper .navigation nav {
@@ -150,6 +164,9 @@ h1 {
     width: 100%;
     text-align: end;
     box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 }
 .navigation_wrapper .navigation nav a {
@@ -179,7 +196,9 @@ h1 {
 
 .burger_icon {
   width: 25px;
-  height: auto;
+  height: 25px;
+  background-image: url(../icons/menu.svg);
+  transition: 0.3s;
 }
 @media screen and (min-width: 1024px) {
   .burger_icon {
@@ -193,8 +212,13 @@ h1 {
   color: #579e93 !important;
   text-decoration: none;
   margin-left: 1.5rem;
+  transition: 0.3s;
 }
-@media screen and (min-width: 1024px) {
+.logo:hover {
+  transition: 0.3s;
+  color: #f7d7b4 !important;
+}
+@media screen and (min-width: 640px) {
   .logo {
     margin-left: 0;
     position: absolute;
@@ -292,12 +316,12 @@ h1 {
 
 .hero-banner {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   position: relative;
 }
 .hero-banner__img {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   object-fit: cover;
 }
 .hero-banner__overlay {
@@ -307,7 +331,44 @@ h1 {
   height: 100%;
   width: 100%;
   background-color: #000000;
-  opacity: 0.5;
+  opacity: 0.6;
+}
+.hero-banner__search-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.hero-banner__label {
+  font-family: "Yeseva One", cursive;
+  color: #f5f5f5;
+  font-weight: 100;
+}
+@media screen and (max-width: 640px) {
+  .hero-banner__label {
+    font-size: 1.1rem;
+  }
+}
+.hero-banner__searchfield {
+  max-width: 400px;
+  width: 80vw;
+  background-color: transparent;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 3rem;
+  margin-top: 0.8rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  padding: 0 1rem;
+  color: white;
+}
+.hero-banner__searchfield:focus {
+  transition: 0.3s;
+  outline: none;
+  box-shadow: none;
+  opacity: 1;
 }
 
 .search {

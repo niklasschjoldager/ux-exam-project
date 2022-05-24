@@ -2,12 +2,12 @@
 
 .hero-banner{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     position: relative;
 
     &__img{
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         object-fit: cover;
     }
 
@@ -18,6 +18,45 @@
         height: 100%;
         width: 100%;
         background-color: vars.$color-dark;
-        opacity: 0.5;
+        opacity: 0.6;
+    }
+
+    &__search-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        font-family: vars.$font-title;
+        color: vars.$color-light;
+        font-weight: 100;
+
+        @media screen and (max-width: vars.$breakpoint-sm) {
+            font-size: 1.1rem;
+        }  
+    }
+    &__searchfield{
+        max-width: 400px;
+        width: 80vw;
+        background-color: transparent;
+        border: 1px solid vars.$color-white;
+        height: 40px;
+        border-radius: vars.$border-radius-bg;
+        margin-top: .8rem;
+        opacity: 0.6;
+        transition: .3s;
+        padding: 0 1rem;
+        color: vars.$color-white;
+
+        &:focus{
+            transition: .3s;
+            outline: none;
+            box-shadow: none;
+            opacity: 1;
+        }
     }
 }
