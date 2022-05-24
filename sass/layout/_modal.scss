@@ -6,6 +6,9 @@
     margin: vars.$space-2xl auto;
     padding: vars.$space-3xl;
     border-radius: vars.$border-radius-bg;
+    background-color: vars.$color-white;
+    border: none;
+    box-shadow: vars.$box-shadow;
     &__title{
         text-align: center;
     }
@@ -19,24 +22,36 @@
         display: flex;
         flex-direction: column;
         margin-bottom: vars.$space-sm;
+        position: relative;
+        svg{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 33px;
+            left: 5px;
+            fill: vars.$color-primary;
+        }
     }
 
     &__input{
         height: 30px;
         padding: vars.$space-sm;
-        border-radius: vars.$border-radius-sm;
-        border: none;
-        background-color: vars.$color-secondary;
+        padding-left: 30px;
+        background-color: transparent;
         outline: none;
         transition: .2s;
+        border: none;
+        border-bottom: 1px solid vars.$color-secondary;
+        
         &:focus{
-            border: 2px solid vars.$color-primary;
+            border-bottom: 1px solid vars.$color-primary;
         }
 
-        &.file-input{
+        .file-input{
             background-color: transparent;
             padding: vars.$space-xs;
             cursor: pointer;
+            border: none;
             &:focus{
                 border: none;
             }
@@ -51,9 +66,10 @@
         cursor: pointer;
         background-color: vars.$color-primary;
         border: none;
-        color: vars.$color-light;
+        color: vars.$color-white;
         border-radius: vars.$border-radius-sm;
         transition: .2s;
+        font-family: vars.$font-title;
         &:hover{
             background-color: #4a897f;
         }

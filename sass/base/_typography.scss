@@ -7,6 +7,13 @@ h4,
 h5,
 h6 {
     margin-bottom: vars.$space-md;
+    font-family: vars.$font-title;
+}
+
+h1{
+    text-align: center;
+    font-size: vars.$text-5xl;
+    margin-top: vars.$space-8xl;
 }
 
 .text-sm {
