@@ -27,7 +27,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 1.5rem;
 
         @media screen and (min-width: vars.$breakpoint-sm) {
             align-items: center;
@@ -117,6 +116,7 @@
     width: 25px;
     height: 25px;
     background-image: url(../icons/menu.svg);
+    margin-right: 1rem;
     transition: .3s;
     cursor: pointer;
 

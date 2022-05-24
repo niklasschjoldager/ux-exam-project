@@ -5,3 +5,15 @@
     width: min(100%, vars.$max-width);
     margin-inline: auto;
 }
+
+body{
+    max-width: vars.$max-width;
+}
+
+section{
+    margin: vars.$space-xl;
+
+    @media screen and (max-width: vars.$breakpoint-sm) {
+        margin: vars.$space-3xl;
+    }  
+}
