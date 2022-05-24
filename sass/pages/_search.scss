@@ -2,7 +2,9 @@
 
 .search{
     position: relative;
-    margin-top: vars.$space-4xl;
+    margin: vars.$space-4xl auto;
+    width: 80%;
+    max-width: 800px;
     &__input{
         position: absolute;
         width: 100%;
