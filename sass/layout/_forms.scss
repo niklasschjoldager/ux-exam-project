@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as vars;
+
+.form-field {
+    $this: &;
+    display: grid;
+
+    &.form-field--left-icon {
+        #{$this}__input {
+            padding-inline-start: vars.$space-2xl;
+        }
+
+        #{$this}__icon {
+            left: vars.$space-2xl / 4;
+        }
+    }
+
+    &.form-field--right-icon {
+        #{$this}__input {
+            padding-inline-end: vars.$space-2xl;
+        }
+
+        #{$this}__icon {
+            right: vars.$space-2xl / 4;
+        }
+    }
+
+    &__input {
+        padding-inline: vars.$space-md;
+        height: 3rem;
+        width: 100%;
+    }
+
+    &__icon {
+        width: 1.5em;
+        height: 1.5em;
+        position: absolute;
+    }
+
+    &__control {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+}

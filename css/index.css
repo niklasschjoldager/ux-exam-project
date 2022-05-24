@@ -65,6 +65,37 @@ h6 {
   line-height: 1rem;
 }
 
+.form-field {
+  display: grid;
+}
+.form-field.form-field--left-icon .form-field__input {
+  padding-inline-start: 2.5rem;
+}
+.form-field.form-field--left-icon .form-field__icon {
+  left: 0.625rem;
+}
+.form-field.form-field--right-icon .form-field__input {
+  padding-inline-end: 2.5rem;
+}
+.form-field.form-field--right-icon .form-field__icon {
+  right: 0.625rem;
+}
+.form-field__input {
+  padding-inline: 1rem;
+  height: 3rem;
+  width: 100%;
+}
+.form-field__icon {
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+}
+.form-field__control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
 .navigation_wrapper {
   height: 50px;
   width: 100vw;
@@ -165,6 +196,91 @@ h6 {
   padding-inline: 1rem;
   width: min(100%, 1280px);
   margin-inline: auto;
+}
+
+.modal {
+  width: 80%;
+  max-width: 500px;
+  margin: 2.5rem auto;
+  padding: 3rem;
+  border-radius: 3rem;
+  background-color: white;
+  border: none;
+  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+}
+.modal__title {
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+.modal__label svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 33px;
+  left: 5px;
+  fill: #579e93;
+}
+.modal__input {
+  height: 30px;
+  padding: 0.75rem;
+  padding-left: 30px;
+  background-color: transparent;
+  outline: none;
+  transition: 0.2s;
+  border: none;
+  border-bottom: 1px solid #d5e8e5;
+}
+.modal__input:focus {
+  border-bottom: 1px solid #579e93;
+}
+.modal__input.file-input {
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+.modal__input.file-input:focus {
+  border: none;
+}
+.modal__button {
+  width: 150px;
+  height: 30px;
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  background-color: #579e93;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  font-family: "Yeseva One", cursive;
+}
+.modal__button:hover {
+  background-color: #4a897f;
+}
+.modal__forgot {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #579e93;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */
