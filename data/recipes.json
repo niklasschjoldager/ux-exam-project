@@ -1,7 +1,9 @@
 [
     {
         "name": "Good Old Fashioned Pancakes",
+        "type": "recipe",
         "imageURL": "good-old-fashioned-pancakes.jpg",
+        "author": "Marie H. Henriksen",
         "servings": 8,
         "preparationTime": 5,
         "cookTime": 15,
@@ -59,7 +61,9 @@
     },
     {
         "name": "World's Best Lasagna",
+        "type": "recipe",
         "imageURL": "worlds-best-lasagna.jpg",
+        "author": "William Miller",
         "servings": 12,
         "preparationTime": 30,
         "cookTime": 150,
@@ -172,7 +176,9 @@
     },
     {
         "name": "Taco Seasoning",
+        "type": "recipe",
         "imageURL": "taco-seasoning.jpg",
+        "author": "Martine Hayworth",
         "servings": 10,
         "preparationTime": 5,
         "cookTime": 5,
@@ -234,5 +240,20 @@
                 "rating": 5
             }
         ]
+    },
+    {
+        "name": "Deba Knife",
+        "type": "ad",
+        "imageURL": "deba-knife.webp"
+    },
+    {
+        "name": "Marble Rolling Pin",
+        "type": "ad",
+        "imageURL": "marble-rolling-pin.jpg"
+    },
+    {
+        "name": "Pot Holder - Oak",
+        "type": "ad",
+        "imageURL": "pot-holder-oak.webp"
     }
 ]
