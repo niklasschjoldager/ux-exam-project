@@ -74,4 +74,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: vars.$space-3xl;
+    margin-top: vars.$space-lg;
 }
