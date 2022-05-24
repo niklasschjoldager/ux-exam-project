@@ -241,7 +241,7 @@ h1 {
   margin-inline: auto;
 }
 
-body {
+main {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -376,10 +376,15 @@ section {
   font-size: 1.875rem;
 }
 
+.frontpage {
+  position: relative;
+}
+
 .hero-banner {
   width: 100vw;
   height: 70vh;
   position: relative;
+  margin: 0;
 }
 .hero-banner__img {
   width: 100vw;
