@@ -1,18 +1,48 @@
-window.addEventListener('DOMContentLoaded', () => {
-    toggleMenu();
+window.addEventListener("DOMContentLoaded", () => {
+  toggleMenu();
+  showSearchResults();
 });
 
-function toggleMenu(){
-    document.querySelector(".burger_icon").addEventListener('click', (e) => {
-        document.querySelector(".navigation").classList.toggle("active");
-        console.log("toggle burger")
-    });
+function toggleMenu() {
+  document.querySelector(".burger_icon").addEventListener("click", (e) => {
+    document.querySelector(".navigation").classList.toggle("active");
+    console.log("toggle burger");
+  });
 }
 
 async function getData() {
-    const JSONData = await
-    fetch("./data/recipes.json");
-    recipes = await JSONData.json();
-    console.log(recipes);
-    return recipes;
+  const JSONData = await fetch("./data/recipes.json");
+  recipes = await JSONData.json();
+  console.log(recipes);
+  return recipes;
+}
+
+async function showSearchResults() {
+  let jsonData = await getData();
+  console.log(jsonData);
+  const templatePointer = document.querySelector(".search-results-template");
+  const sectionPointer = document.querySelector(".search-results");
+  sectionPointer.innerHTML = "";
+  jsonData.forEach((recipe) => {
+    console.log(recipe);
+    const clone = templatePointer.cloneNode(true).content;
+    clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
+    clone.querySelector(".recipe__name").textContent = recipe.name;
+    clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
+    clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+    sectionPointer.appendChild(clone);
+  });
+
+  function getReviews(recipe) {
+    console.log(recipe.reviews);
+    let ratings = [];
+    recipe.reviews.forEach((review) => {
+      console.log(review.rating);
+      ratings.push(review.rating);
+    });
+    console.log(ratings);
+    const sum = ratings.reduce((acc, cur) => acc + cur);
+    const average = sum / ratings.length;
+    return parseFloat(average.toFixed(1));
+  }
 }

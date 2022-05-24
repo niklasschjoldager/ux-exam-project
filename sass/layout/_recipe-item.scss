@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as vars;
+
+.recipe{
+    &__image{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: vars.$border-radius-sm;
+    }
+
+    &__name{
+        font-size: vars.$text-base;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__author{
+        opacity: 0.4;
+        margin-left: auto;
+        font-size: vars.$text-xs;
+    }
+
+}
