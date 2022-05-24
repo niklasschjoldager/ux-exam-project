@@ -186,7 +186,7 @@ h1 {
   .navigation_wrapper .navigation nav a:hover {
     background-color: transparent !important;
     transition: 0.3s;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 .navigation_wrapper .navigation nav a:hover {
@@ -198,6 +198,11 @@ h1 {
   width: 25px;
   height: 25px;
   background-image: url(../icons/menu.svg);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.burger_icon:hover {
+  opacity: 0.5;
   transition: 0.3s;
 }
 @media screen and (min-width: 1024px) {
@@ -213,6 +218,7 @@ h1 {
   text-decoration: none;
   margin-left: 1.5rem;
   transition: 0.3s;
+  letter-spacing: -0.04cm;
 }
 .logo:hover {
   transition: 0.3s;
@@ -363,6 +369,10 @@ h1 {
   transition: 0.3s;
   padding: 0 1rem;
   color: white;
+}
+.hero-banner__searchfield:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
 .hero-banner__searchfield:focus {
   transition: 0.3s;
