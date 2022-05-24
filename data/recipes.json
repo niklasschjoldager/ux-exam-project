@@ -1,0 +1,238 @@
+[
+    {
+        "name": "Good Old Fashioned Pancakes",
+        "imageURL": "good-old-fashioned-pancakes.jpg",
+        "servings": 8,
+        "preparationTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+            {
+                "name": "All-purpose flour",
+                "quantity": "1 ½ cups"
+            },
+            {
+                "name": "Baking powder",
+                "quantity": "3 ½ teaspoons"
+            },
+            {
+                "name": "Salt",
+                "quantity": "¼ teaspoon or more to taste"
+            },
+            {
+                "name": "White sugar",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "Milk",
+                "quantity": "1 ¼ cups"
+            },
+            {
+                "name": "Egg",
+                "quantity": "1"
+            },
+            {
+                "name": "Melted butter",
+                "quantity": "3 tablespoons"
+            }
+        ],
+        "directions": [
+            "In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.",
+            "Heat a lightly oiled griddle or frying pan over medium-high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot."
+        ],
+        "reviews": [
+            {
+                "title": "Baking powder has salt..",
+                "comment": "As a chef it is interesting how many times friends will ask why something turns out tasting the way it does. I ask them if they tasted their ingredients...the answer being, no. With regards to the saltiness of these delicious pancakes, it is the baking powder. Go ahead, put a little in your mouth. To some, this will be VERY salty. Afterall, there is 3 1/2 teaspoons of baking powder in the recipe PLUS the teaspoon of salt. So, I recommend that for those that noted them to be to salty, leave out the teaspoon of salt. Remember, baking is chemistry, so do not mess with the baking powder as you will change the outcome of the rising properties of these pancakes. If they still seem to be too salty, try some zest of a lemon peel.",
+                "rating": 5
+            },
+            {
+                "title": "Loved it",
+                "comment": "Great fluffy pancakes. I will no longer use the boxedkind now this will be my master recipe for pancakes ....",
+                "rating": 5
+            },
+            {
+                "title": "Great pancakes!",
+                "comment": "great pancakes! i don't know why more people don't make from scratch, they were so easy to make and tasted so much better! did add a bit of water as it was pretty thick, but after about 1/4 c it was perfect.",
+                "rating": 5
+            }
+        ]
+    },
+    {
+        "name": "World's Best Lasagna",
+        "imageURL": "worlds-best-lasagna.jpg",
+        "servings": 12,
+        "preparationTime": 30,
+        "cookTime": 150,
+        "ingredients": [
+            {
+                "name": "Sweet italian sausage",
+                "quantity": "1 pound"
+            },
+            {
+                "name": "Lean ground beef",
+                "quantity": "¾ pound"
+            },
+            {
+                "name": "Minced onion",
+                "quantity": "½ cup"
+            },
+            {
+                "name": "Crushed garlic",
+                "quantity": "2 cloves"
+            },
+            {
+                "name": "Crushed tomatoes",
+                "quantity": "1 can"
+            },
+            {
+                "name": "Tomato paste",
+                "quantity": "2 cans"
+            },
+            {
+                "name": "Canned tomato sauce",
+                "quantity": "2 cans"
+            },
+            {
+                "name": "Water",
+                "quantity": "½ cup"
+            },
+            {
+                "name": "White sugar",
+                "quantity": "2 tablespoons"
+            },
+            {
+                "name": "Dried basil leaves",
+                "quantity": "1 ½ teaspoons"
+            },
+            {
+                "name": "Fennel seeds",
+                "quantity": "½ teaspoon"
+            },
+            {
+                "name": "Italian seasoning",
+                "quantity": "1 teaspoon"
+            },
+            {
+                "name": "Salt",
+                "quantity": "1 ½ teaspoons"
+            },
+            {
+                "name": "Ground black pepper",
+                "quantity": "¼ teaspoon"
+            },
+            {
+                "name": "Chopped fresh parsley",
+                "quantity": "4 tablespoons"
+            },
+            {
+                "name": "Lasagna noodles",
+                "quantity": "12"
+            },
+            {
+                "name": "Ricotta cheese",
+                "quantity": "16 ounces"
+            },
+            {
+                "name": "Egg",
+                "quantity": "1"
+            },
+            {
+                "name": "Sliced mozzarella cheese",
+                "quantity": "¾ pound"
+            },
+            {
+                "name": "Grated Parmesan cheese",
+                "quantity": "¾ cup"
+            }
+        ],
+        "directions": [
+            "In a Dutch oven, cook sausage, ground beef, onion, and garlic over medium heat until well browned. Stir in crushed tomatoes, tomato paste, tomato sauce, and water. Season with sugar, basil, fennel seeds, Italian seasoning, 1 teaspoon salt, pepper, and 2 tablespoons parsley. Simmer, covered, for about 1 1/2 hours, stirring occasionally.",
+            "Bring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt.",
+            "Preheat oven to 375 degrees F (190 degrees C).",
+            "To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13-inch baking dish. Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture. Top with a third of mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese. Repeat layers, and top with remaining mozzarella and Parmesan cheese. Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.",
+            "Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes. Cool for 15 minutes before serving."
+        ],
+        "reviews": [
+            {
+                "title": "I love it!",
+                "comment": "Having grown up in a family of excellent Italian cooks, I admit I am a tough room when it comes to Italian recipes. Despite that, this one is so good that I am sure my mother and grandmother are smiling down from heaven in approval! I saw this same recipe on another site and it only called for 1 teaspoon of salt, not 1 tablespoon. It came out perfect with the lower amount of salt. It also did not call for any salt in the ricotta. I have some recommendations, below: Cut down the water to 1/4 cup. It makes a slightly thicker sauce and I felt the lasagna holds up better that way (although this recipe is good even with more water). Use half parmesan and half romano cheese. It gives a slightly more robust flavor. Put a few tablespoons of the romano/parmesan cheese in with the ricotta mixture. Add a half teaspoon of grated nutmeg in with the ricotta mixture. Increase to one teaspoon of fennel seed. Use 23 ounces of ricotta instead of 16. Use bulk sausage meat if you can find it. Otherwise if you buy link sausage make sure to remove it from the casing and mix it with the ground beef. And finally (and this is very important), make the sauce the night before and leave it in the fridge overnight. The sauce tastes better and better as it sits and develops more richness of body and flavor. Trust me, all of these changes will improve the recipe! Mangia!",
+                "rating": 5
+            },
+            {
+                "title": "Great recipe",
+                "comment": "I'll be making this again and again. And finally, I found a lasagna that doesn't fall apart on a plate but isn't dry either! I read a lot of the reviews before deciding on how I was going to make this for the first time. I made the following changes: 1) used 1 lb of ground beef plus the sausage, 2) added a can crushed tomatoes to the sauce to make it a little heartier 3) substituted red wine for the water (wow did that improve the flavor!) 4) added only 1 1/2 teaspoons of salt to the sauce 5) doubled the Italian Seasoning 6) omitted the fennel (don't like it) 7)used 1 lb of mozzarella cheese 8) added 1/2 teaspoon crushed red pepper flakes 8) cooked the noodles by placing them in hot water for 30 mins (worked well, they turn out perfect) 9) used dried parsley because I didn't have fresh stuff. The two things I wish I'd have known prior to making this: use the deepest dish you can find or you won't fit all the layers, and if you like the white cheezy part of the lasagna, you'll definitely need to double the ingredients for the ricotta cheese mixture. The recipe makes barely enough to fully cover my 9 X 13 dish. Hope this helps! Happy cooking!",
+                "rating": 5
+            },
+            {
+                "title": "So good I had to make my first review",
+                "comment": "I am going to write my first review ever on this board, and it is for this recipe. I am from the mother country Italy, and this is the closest recipe to ones like home I have found. If you want to try a real italian lasagna, this is the one. The sauce is the key and would be great on anything. I added more garlic, but that was it. My family and friends thought this was a old secret family recipe. It is now and they will never know.",
+                "rating": 5
+            }
+        ]
+    },
+    {
+        "name": "Taco Seasoning",
+        "imageURL": "taco-seasoning.jpg",
+        "servings": 10,
+        "preparationTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+            {
+                "name": "Chili powder",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "Ground cumin",
+                "quantity": "1 ½ teaspoons "
+            },
+            {
+                "name": "Sea salt",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "Ground black pepper",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "Ground paprika",
+                "quantity": "½ teaspoon"
+            },
+            {
+                "name": "Garlic powder",
+                "quantity": "¼ teaspoon"
+            },
+            {
+                "name": "Onion powder",
+                "quantity": "¼ teaspoon "
+            },
+            {
+                "name": "Crushed red pepper flakes",
+                "quantity": "¼ teaspoon"
+            },
+            {
+                "name": "Dried oregano ",
+                "quantity": "¼ teaspoon"
+            }
+        ],
+        "directions": [
+            "Mix together chili powder, cumin, salt, pepper, paprika, garlic powder, onion powder, red pepper flakes, and oregano in a small bowl."
+        ],
+        "reviews": [
+            {
+                "title": "Fine, but..",
+                "comment": "Of course, I tweaked it to up the garlic and onion to double. I'm a garlic/onion lover, and sometimes I substitute out those for the fresh version instead. I added 1 tsp of cornstarch (or 2 tsp of flour will work) to the mix which allows the spices to cling more readily to the meat as a thickened sauce. The spice mixture is great, but sometime was missing. I looked around at a few other recipes and found one mentioning a beef bullion cube. I have Better than Bullion paste (beef or chicken) and add a tsp while cooking the beef. What a difference! It really gives the meaty flavor that was lacking (hard to believe more meatiness is needed in a pound of ground beef, but it's true). Whichever recipe you use, try adding some meat stock paste or equivalent (but do consider the added salt from bullion if you like it not too salty). Also this recipe doesn't mention it, but adding a 1/4 to 1/2 cup of water towards the end after browning the meat with the seasoning allows the flavor to really mingle and absorb as you heat and reduce the sauce down a bit (that's where the cornstatch cling really shines). The water addition is just the basic instruction from the old packets I used to buy and it's not a step I'd ever skip.",
+                "rating": 3
+            },
+            {
+                "title": "Just like the thing from the stores",
+                "comment": "This is excellent. It definitely tastes like the packet I usually used (will use this from now on). We mixed 1 lb. of browned-and-drained ground beef, this seasoning mix, plus a mixture of 2 tsp. of cornstarch and 2/3 cup of cold water. Then, we left it on low until all of it was warm.",
+                "rating": 5
+            },
+            {
+                "title": "Lifesaver!",
+                "comment": "This recipe was a life-saver!! After already mixing ingrediants for seven layer taco dip, I realized that I was out of taco seasoning. Frantic, I ran to the computer and found this! YEAH!! I mixed it in with some cream cheese and sour cream to taste it first and it was great. Worked even better in the dip!! If I'd had known how easy this was, I would have been making my own taco seasoning for a while now!! The only thing I changed was reduced the chili powder to 1/2 TBLS. Very good and will make again!! Thanks Bill for posting this!",
+                "rating": 5
+            }
+        ]
+    }
+]
