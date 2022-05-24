@@ -23,6 +23,13 @@ h4,
 h5,
 h6 {
   margin-bottom: 1rem;
+  font-family: "Yeseva One", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 4rem;
 }
 
 .text-sm {
@@ -210,7 +217,6 @@ h6 {
 }
 .modal__title {
   text-align: center;
-  font-family: "Yeseva One", cursive;
 }
 .modal__form {
   display: flex;
@@ -243,13 +249,13 @@ h6 {
 .modal__input:focus {
   border-bottom: 1px solid #579e93;
 }
-.modal__input.file-input {
+.modal__input .file-input {
   background-color: transparent;
   padding: 0.5rem;
   cursor: pointer;
   border: none;
 }
-.modal__input.file-input:focus {
+.modal__input .file-input:focus {
   border: none;
 }
 .modal__button {
