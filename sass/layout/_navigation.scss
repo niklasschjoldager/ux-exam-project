@@ -27,7 +27,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 1.5rem;
 
         @media screen and (min-width: vars.$breakpoint-sm) {
             align-items: center;
@@ -100,7 +99,7 @@
                     &:hover{
                         background-color: transparent !important;
                         transition: 0.3s;
-                        opacity: 0.6;
+                        opacity: 0.5;
                     }
                 }  
 
@@ -117,7 +116,14 @@
     width: 25px;
     height: 25px;
     background-image: url(../icons/menu.svg);
+    margin-right: 1rem;
     transition: .3s;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.5;
+        transition: .3s;
+    }
 
     @media screen and (min-width: vars.$breakpoint-lg) {
         display: none;
@@ -131,6 +137,7 @@
     text-decoration: none;
     margin-left: 1.5rem;
     transition: .3s;
+    letter-spacing: -0.04cm;
 
     &:hover{
         transition: .3s;
