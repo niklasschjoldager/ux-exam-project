@@ -71,7 +71,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #d5e8e5;
+  background-color: white;
   display: flex;
   align-content: flex-end;
   box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
@@ -85,26 +85,75 @@ h6 {
   justify-content: space-between;
   padding-right: 1.5rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .navigation_wrapper .navigation {
     align-items: center;
     justify-content: flex-end;
   }
 }
-.navigation_wrapper .navigation a {
+.navigation_wrapper .navigation nav {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  margin: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+}
+@media screen and (min-width: 1024px) {
+  .navigation_wrapper .navigation nav {
+    position: static;
+    display: block;
+    border-bottom: none;
+    width: 100%;
+    text-align: end;
+    box-shadow: none;
+  }
+}
+.navigation_wrapper .navigation nav a {
   text-decoration: none;
   color: black;
-  margin-left: 1rem;
   font-size: 0.9rem;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 0.3rem;
+}
+@media screen and (min-width: 1024px) {
+  .navigation_wrapper .navigation nav a {
+    margin-left: 1rem;
+    border-bottom: none;
+  }
+  .navigation_wrapper .navigation nav a:hover {
+    background-color: transparent !important;
+  }
+}
+.navigation_wrapper .navigation nav a:hover {
+  background-color: #f5f5f5;
+}
+
+.burger_icon {
+  width: 25px;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .burger_icon {
+    display: none;
+  }
 }
 
 .logo {
   font-family: "Yeseva One", cursive;
   font-size: 1.3rem !important;
   color: #579e93 !important;
+  text-decoration: none;
+  margin-left: 1.5rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .logo {
+    margin-left: 0;
     position: absolute;
     top: 50%;
     left: 50%;

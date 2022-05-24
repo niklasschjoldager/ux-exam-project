@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: vars.$color-secondary;
+    background-color: vars.$color-white;
     display: flex;
     align-content: flex-end;
     
@@ -28,27 +28,83 @@
         justify-content: space-between;
         padding-right: 1.5rem;
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: vars.$breakpoint-lg) {
             align-items: center;
             justify-content: flex-end;
         }  
+
+        nav{
+            position: absolute;
+            right: 0;
+            top: 50px;
+            margin: 5px;
+            background-color: vars.$color-white;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            text-align: center;
+            box-shadow:
+            2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006),
+            6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
+            12.5px 11.6px 10px rgba(0, 0, 0, 0.01),
+            22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
+            41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014),
+            100px 93px 80px rgba(0, 0, 0, 0.02)
+            ;
         
-        a{
-            text-decoration: none;
-            color: black;
-            margin-left: 1rem;
-            font-size: 0.9rem;
+
+            @media screen and (min-width: vars.$breakpoint-lg) {
+                position: static;
+                display: block;
+                border-bottom: none;
+                width: 100%;
+                text-align: end;
+                box-shadow: none;
+            }  
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 0.9rem;
+                width: 100%;
+                border-bottom: 1px solid vars.$color-light;
+                padding: 0.3rem;
+
+                @media screen and (min-width: vars.$breakpoint-lg) {
+                    margin-left: 1rem;
+                    border-bottom: none;
+                    
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }  
+
+                &:hover{
+                    background-color: vars.$color-light;
+                }
+            }
         }
     }
 }
 
+.burger_icon{
+    width: 25px;
+    height: auto;
+
+    @media screen and (min-width: vars.$breakpoint-lg) {
+        display: none;
+    }  
+}
 
 .logo{
     font-family: vars.$font-title;
     font-size: 1.3rem !important;
     color: vars.$color-primary !important;
+    text-decoration: none;
+    margin-left: 1.5rem;
 
-    @media screen and (min-width: vars.$breakpoint-md) {
+    @media screen and (min-width: vars.$breakpoint-lg) {
+        margin-left: 0;
         position: absolute;
         top: 50%;
         left: 50%;
