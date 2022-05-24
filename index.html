@@ -9,12 +9,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet"/>
+        <script src="./index.js" defer></script>
     </head>
     <body>
         <div class="navigation_wrapper">
             <div class="navigation">
                 <a class="logo" href="./index.html">Cooklish</a>
-                <img class="burger_icon" src="./icons/menu.svg" alt="Burger menu"/>
+                <div class="burger_icon"></div>
                 <nav>
                     <a href="./explore.html">Explore</a>
                     <a href="./account.html">Account</a>
@@ -68,7 +69,11 @@
         </dialog>
         <section class="hero-banner">
             <div class="hero-banner__overlay"></div>
-            <img class="hero-banner__img" src="./images/max-delsid-0geTqSZ76Xg-unsplash.jpg" alt="">
+            <div class="hero-banner__search-wrapper">
+                <label class="hero-banner__label text-xl">What are you looking for?</label>
+                <input class="hero-banner__searchfield" type="text" name="search" autocomplete="off">
+            </div>
+            <img class="hero-banner__img" src="./images/edgar-castrejon-4Q_xlBOaCso-unsplash.jpg" alt="">
         </section>
     </body>
 </html>
