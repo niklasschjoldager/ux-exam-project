@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as vars;
+
+.hero-banner{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    &__img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: vars.$color-dark;
+        opacity: 0.5;
+    }
+}
