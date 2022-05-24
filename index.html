@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Cooklish | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Cooklish | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <dialog class="sign-up modal">
+            <h2 class="modal__title">Sign Up</h2>
+            <form class="modal__form" method="dialog">
+
+                <label class="modal__label">Your name 
+                  <input class="modal__input" type="text" />
+                </label>
+
+                <label class="modal__label">Your email 
+                  <input class="modal__input" type="email" />
+                </label>
+
+                <label class="modal__label">Your password 
+                  <input class="modal__input" type="password" />
+                </label>
+
+                <label class="modal__label">Your profile image 
+                  <input class="modal__input file-input" type="file" accept="image/*" />
+                </label>
+
+                <button class="modal__button" type="submit">Sign up</button>
+            </form>
+        </dialog>
+        <dialog open class="sign-in modal">
+            <h2 class="modal__title">Sign in</h2>
+            <form class="modal__form" method="dialog">
+
+                <label class="modal__label">Your email 
+                  <input class="modal__input" type="email" />
+                </label>
+
+                <label class="modal__label">Your password 
+                  <input class="modal__input" type="password" />
+                </label>
+
+                <button class="modal__button" type="submit">Sign in</button>
+                <a class="modal__forgot" href="/">Forgot your password?</a>
+            </form>
+        </dialog>
+    </body>
 </html>

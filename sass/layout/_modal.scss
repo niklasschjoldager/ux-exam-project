@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as vars;
+
+.modal{
+    width: 80%;
+    max-width: 500px;
+    margin: vars.$space-2xl auto;
+    padding: vars.$space-3xl;
+    border-radius: vars.$border-radius-bg;
+    &__title{
+        text-align: center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: vars.$space-sm;
+    }
+
+    &__input{
+        height: 30px;
+        padding: vars.$space-sm;
+        border-radius: vars.$border-radius-sm;
+        border: none;
+        background-color: vars.$color-secondary;
+        outline: none;
+        transition: .2s;
+        &:focus{
+            border: 2px solid vars.$color-primary;
+        }
+
+        &.file-input{
+            background-color: transparent;
+            padding: vars.$space-xs;
+            cursor: pointer;
+            &:focus{
+                border: none;
+            }
+        }
+    }
+
+    &__button{
+        width: 150px;
+        height: 30px;
+        margin-top: vars.$space-md;
+        align-self: center;
+        cursor: pointer;
+        background-color: vars.$color-primary;
+        border: none;
+        color: vars.$color-light;
+        border-radius: vars.$border-radius-sm;
+        transition: .2s;
+        &:hover{
+            background-color: #4a897f;
+        }
+    }
+
+    &__forgot{
+        margin-top: vars.$space-xs;
+        font-size: vars.$text-sm;
+        text-align: center;
+        color: vars.$color-primary;
+    }
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }

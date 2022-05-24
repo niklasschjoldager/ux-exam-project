@@ -71,4 +71,69 @@ h6 {
   margin-inline: auto;
 }
 
+.modal {
+  width: 80%;
+  max-width: 500px;
+  margin: 2.5rem auto;
+  padding: 3rem;
+  border-radius: 3rem;
+}
+.modal__title {
+  text-align: center;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+.modal__input {
+  height: 30px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #d5e8e5;
+  outline: none;
+  transition: 0.2s;
+}
+.modal__input:focus {
+  border: 2px solid #579e93;
+}
+.modal__input.file-input {
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.modal__input.file-input:focus {
+  border: none;
+}
+.modal__button {
+  width: 150px;
+  height: 30px;
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  background-color: #579e93;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+.modal__button:hover {
+  background-color: #4a897f;
+}
+.modal__forgot {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #579e93;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 /*# sourceMappingURL=index.css.map */
