@@ -9,6 +9,7 @@
 main, .main{
     max-width: vars.$max-width;
     margin: 0 auto;
+    min-height: 100vh;
 }
 section{
     margin: vars.$space-xl;

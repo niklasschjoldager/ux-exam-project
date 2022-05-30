@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
+        rel="stylesheet"
     />
     <script src="./index.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <header class="navigation_wrapper">
         <div class="navigation">
             <a class="logo" href="./index.html">Cooklish</a>
@@ -27,11 +27,50 @@
         </div>
     </header>
 
+    <main>
+        <section class="recipe-view">
+            <img class="recipe-view__image" src="" alt="recipe image">
+            <div class="recipe-view__title-wrapper">
+                <p class="recipe-view__title"></p>
+                <div class="recipe-view__time">
+                    <svg class="recipe-view__time-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="lock"><rect width="24" height="24" opacity="0"/><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1z"/><path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/></g></g></svg>                    <p class="recipe-view__time-text"></p>
+                </div>
+                <div class="recipe-view__serving">
+                    <svg class="recipe-view__serving-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="person"><rect width="24" height="24" opacity="0"/><path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/><path d="M12 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"/></g></g></svg>
+                    <p class="recipe-view__serving-text"></p>
+                </div>
+            </div>
+            <div class="recipe-view__info-wrapper">
+                <ul class="recipe-view__ingrediens"></ul>
+                <ul class="recipe-view__directions"></ul>
+            </div>
+                <aside class="recipe-view__ad"></aside>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__stars">stars</div>
+            <div class="reviews__input-wrapper">
+                <input class="reviews__input" type="text">
+                <button class="reviews_button">Send</button>
+            </div>
+            <div class="reviews__seperation-line"></div>
+            <div class="reviews__all-recipe-reviews"></div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div>
             <p class="footer__logo">Cooklish<span class="footer__logo-seperator">|</span><span class="footer__logo-text">Share your recipes with the world</span></p>
         </div>
     </footer>
 
-  </body>
+    <template class="recipe-reviews-template">
+        <div class="review">
+            <div class="review__rating"></div>
+            <h4 class="review__title"></h4>
+            <p class="review__text"></p>
+        </div>
+    </template>
+
+</body>
 </html>
