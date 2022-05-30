@@ -14,7 +14,7 @@ main, .main{
 section{
     margin: vars.$space-xl;
 
-    @media screen and (max-width: vars.$breakpoint-sm) {
-        margin: vars.$space-3xl;
+    @media screen and (min-width: vars.$breakpoint-md) {
+        margin: vars.$space-4xl;
     }  
 }

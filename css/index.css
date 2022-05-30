@@ -35,6 +35,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 8rem;
+  line-height: 3rem;
 }
 
 .text-sm {
@@ -74,7 +75,7 @@ h1 {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1rem;
+  line-height: 2.75rem;
 }
 
 .footer {
@@ -295,9 +296,9 @@ main, .main {
 section {
   margin: 1.5rem;
 }
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 768px) {
   section {
-    margin: 3rem;
+    margin: 4rem;
   }
 }
 
@@ -667,7 +668,12 @@ section {
 
 .recipe-view__title {
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .recipe-view__title {
+    margin-top: 6rem;
+  }
 }
 .recipe-view__image {
   height: 350px;
@@ -685,29 +691,41 @@ section {
 }
 .recipe-view__details {
   display: flex;
-  margin-left: 1.3xsrem;
-  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
 }
 .recipe-view__ad-image {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
-.recipe-view__info-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  margin-top: 6rem;
+@media screen and (min-width: 768px) {
+  .recipe-view__info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 6rem;
+  }
 }
 .recipe-view__ingrediens {
   list-style-position: inside;
   background-color: white;
   padding: 1.25rem;
   box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .recipe-view__ingrediens {
+    margin-top: 0;
+  }
 }
 .recipe-view__directions {
   list-style-position: inside;
   padding: 1.25rem;
-  margin-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .recipe-view__directions {
+    margin-left: 3rem;
+  }
 }
 .recipe-view__ad {
   margin: 4rem 0;
@@ -730,6 +748,7 @@ section {
 
 .ingredient::marker {
   font-size: 0.7rem;
+  margin-right: 1.25rem;
 }
 
 .direction {
@@ -743,7 +762,11 @@ section {
 
 .reviews {
   max-width: 750px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    margin: 0 auto;
+  }
 }
 .reviews__star {
   width: 25px;
@@ -757,9 +780,26 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 4rem;
 }
 .reviews__input {
   width: 100%;
+  border: 1px solid #579e93;
+  padding: 1rem;
+  transition: 0.3s;
+}
+.reviews__input:focus {
+  outline: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.reviews__seperation-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin: 4rem 0;
+  opacity: 0.2;
 }
 .reviews__button {
   width: 150px;
@@ -777,6 +817,18 @@ section {
 .reviews__button:hover {
   background-color: #f7d7b4;
   transition: 0.3s;
+}
+
+.review {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+}
+.review__star {
+  width: 15px;
+  height: auto;
+  fill: rgb(231, 200, 25);
 }
 
 .search {

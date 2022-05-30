@@ -9,7 +9,11 @@
 .recipe-view{
     &__title{
         width: 100%;
-        margin-top: vars.$space-6xl;
+        margin-top: vars.$space-3xl;
+
+        @media screen and (min-width: vars.$breakpoint-md) {
+            margin-top: vars.$space-6xl;
+        }  
     }
     &__image{
         height: 350px;
@@ -27,8 +31,8 @@
     }
     &__details{
         display: flex;
-        margin-left: 1.3xsrem;
-        margin-top: 1rem;
+        margin-left: vars.$space-xl;
+        margin-top: vars.$space-xl;
     }
     &__ad-image{
         height: 200px;
@@ -36,20 +40,28 @@
         object-fit: cover;
     }
     &__info-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        margin-top: vars.$space-6xl;
+        @media screen and (min-width: vars.$breakpoint-md) {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-top: vars.$space-6xl;
+        }  
     }
     &__ingrediens{
         list-style-position: inside;
         background-color: vars.$color-white;
         padding: vars.$space-lg;
         box-shadow: vars.$box-shadow;
+        margin-top: vars.$space-3xl;
+        @media screen and (min-width: vars.$breakpoint-md) {
+            margin-top:0;
+        } 
     }
     &__directions{
         list-style-position: inside;
         padding: vars.$space-lg;
-        margin-left: vars.$space-lg;
+        @media screen and (min-width: vars.$breakpoint-md) {
+            margin-left: vars.$space-3xl;
+        } 
     }
     &__ad{
         margin: vars.$space-4xl 0;
@@ -70,9 +82,11 @@
         background-color: vars.$color-secondary;
         font-size: vars.$text-sm;
     }
+    
 }
 .ingredient::marker {
     font-size: 0.7rem;
+    margin-right: vars.$space-lg;
 }
 
 .direction{
@@ -88,7 +102,10 @@
 
 .reviews{
     max-width: vars.$max-width-sm;
-    margin: 0 auto;
+
+    @media screen and (min-width: vars.$breakpoint-md) {
+        margin: 0 auto;
+    }  
 
     &__star{
         width: 25px;
@@ -102,9 +119,28 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin-bottom: vars.$space-4xl;
     }
     &__input{
         width: 100%;
+        border: 1px solid vars.$color-primary;
+        padding: 1rem;
+        transition: .3s;
+
+        &:focus{
+            outline: none;
+            background-color: transparent;
+            transition: .3s;
+
+        }
+    }
+    &__seperation-line{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: vars.$color-dark;
+        margin: vars.$space-4xl 0;
+        opacity: .2;
     }
 
     &__button{
@@ -125,5 +161,16 @@
         }
 
     }
+}
+.review{
+    background: white;
+    padding: vars.$space-md;
+    margin-bottom: vars.$space-xl;
+    box-shadow: vars.$box-shadow;
 
+    &__star{
+        width: 15px;
+        height: auto;
+        fill: rgb(231, 200, 25);
+    }
 }
