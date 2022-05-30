@@ -155,14 +155,15 @@ async function showSearchResults() {
   const templatePointer = document.querySelector(".recipes-template");
   const sectionPointer = document.querySelector(".results");
 
-  if (!templatePointer || sectionPointer) return;
+  if (!templatePointer) return;
 
   let jsonData = await getData();
   sectionPointer.innerHTML = "";
-  jsonData.forEach((recipe) => {
+  jsonData.forEach((recipe, i) => {
     const clone = templatePointer.cloneNode(true).content;
     clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
     clone.querySelector(".recipe__name").textContent = recipe.name;
+    clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
 
     if (recipe.type === "recipe") {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
@@ -183,7 +184,7 @@ async function displayExploreRecipes() {
   sectionPointer.innerHTML = "";
   sectionPointer.forEach((section) => {
     let random = jsonData.sort(() => Math.random() - Math.random()).slice(0, 3);
-    random.forEach((recipe) => {
+    random.forEach((recipe, i) => {
       const clone = templatePointer.cloneNode(true).content;
       clone.querySelector(".recipe__img").src = "./images/" + recipe.imageURL;
       clone.querySelector(".recipe__title").textContent = recipe.name;
@@ -191,6 +192,7 @@ async function displayExploreRecipes() {
       if (recipe.type === "recipe") {
         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
         clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+        clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
       } else {
         clone.querySelector(".recipe__text svg").textContent = "";
         clone.querySelector(".recipe__author").textContent = "AD";

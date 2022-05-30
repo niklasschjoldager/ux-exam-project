@@ -201,7 +201,7 @@ h1 {
   left: 0;
   background-color: white;
   display: flex;
-  align-content: flex-end;
+  align-content: space-between;
   z-index: 10;
   box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
 }
@@ -212,6 +212,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 640px) {
+  .navigation_wrapper .navigation {
+    justify-content: flex-end;
+  }
 }
 .navigation_wrapper .navigation.active .burger_icon {
   background-image: url(../icons/close-outline.svg);
