@@ -1,11 +1,21 @@
 window.addEventListener("DOMContentLoaded", () => {
   toggleMenu();
+  toggleSidebar();
   displayPopularRecipes();
   showSearchResults();
   displayNewRecipes();
   displayExploreRecipes();
   toggleModal();
 });
+
+function toggleSidebar() {
+  console.log("TOGGLESIDEBAR");
+  if (document.querySelector(".sidebar")) {
+    document.querySelector(".sidebar").addEventListener("click", () => {
+      document.querySelector(".sidebar").classList.toggle("js-open");
+    });
+  }
+}
 
 function toggleMenu() {
   document.querySelector(".burger_icon").addEventListener("click", (e) => {
