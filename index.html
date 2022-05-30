@@ -82,9 +82,13 @@
                 <h2 class="popular-recipes__title">Popular recipes</h2>
                 <div class="popular-recipes__container"></div>
             </section>
+            <section class="new-recipes">
+                <h2 class="new-recipes__title">New recipes</h2>
+                <div class="new-recipes__container"></div>
+            </section>
         </main>
 
-    <template class="popular-recipes-template">
+    <template id="frontpage-recipes-template" class="popular-recipes-template new-recipes-template">
         <article class="recipe">
             <img class="recipe__img" src="" alt="" />
             <h2 class="recipe__title"></h2>
@@ -104,17 +108,5 @@
             </div>
         </article>
     </template>
-
-    <!-- Image to the left, description to the right, one recipe pr row -->
-    <template class="new-recipes-template">
-        <article class="recipe">
-            <img class="recipe__img" src="" alt="" />
-            <div class="recipe__text-wrapper">
-                <h4 class="recipe__title"></h4>
-                <p class="recipe__description"></p>
-                <button class="recipe__button">Go to recipe</button>
-            </div>
-        </article>
-        </template>
-    </body>
+</body>
 </html>

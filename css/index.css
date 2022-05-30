@@ -442,7 +442,7 @@ section {
   opacity: 1;
 }
 
-.popular-recipes__container {
+.popular-recipes__container, .new-recipes__container {
   margin-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -450,12 +450,12 @@ section {
   margin-top: 1.25rem;
   margin-top: 4rem;
 }
-.popular-recipes__container .recipe__img {
+.popular-recipes__container .recipe__img, .new-recipes__container .recipe__img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.popular-recipes__container .recipe__title {
+.popular-recipes__container .recipe__title, .new-recipes__container .recipe__title {
   font-size: 1rem;
 }
 
