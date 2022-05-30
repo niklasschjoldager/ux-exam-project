@@ -42,12 +42,12 @@
         font-weight: 100;
 
         @media screen and (max-width: vars.$breakpoint-sm) {
-            font-size: 1.1rem;
+            font-size: vars.$text-lg;
         }  
     }
     &__seachfield-wrapper{
         position: relative;
-        margin-top: .8rem;
+        margin-top: vars.$space-sm;
     }
     &__searchicon{
         position: absolute;
@@ -68,7 +68,7 @@
         border-radius: vars.$border-radius-bg;
         opacity: 0.3;
         transition: .3s;
-        padding: 0 1rem;
+        padding: 0 vars.$space-md;
         color: vars.$color-white;
 
         &:hover{
@@ -107,7 +107,7 @@
             object-fit: cover;
         }
         &__title{
-            font-size: 1rem;
+            font-size: vars.$text-base;
         }
         &__chip{
             position: absolute;

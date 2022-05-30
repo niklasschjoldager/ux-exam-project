@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem 0;
+    padding: vars.$space-1xl 0;
 
     &__logo{
         color: vars.$color-primary;
@@ -23,6 +23,6 @@
         letter-spacing: 0cm;
     }
     &__logo-seperator{
-        margin: 0 .8rem;
+        margin: 0 vars.$space-sm;
     }
 }

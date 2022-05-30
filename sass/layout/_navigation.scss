@@ -11,9 +11,7 @@
   align-content: space-between;
   z-index: 10;
 
-  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
-    12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
-    41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+  box-shadow: vars.$box-shadow;
 
   .navigation {
     height: 50px;
@@ -50,9 +48,7 @@
       flex-direction: column;
       width: 200px;
       text-align: center;
-      box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
-        12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
-        41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+      box-shadow: vars.$box-shadow;
 
       opacity: 0;
       visibility: hidden;
@@ -66,7 +62,7 @@
         width: 100%;
         text-align: end;
         box-shadow: none;
-        margin: 1rem;
+        margin: vars.$space-md;
 
         opacity: 1;
         visibility: visible;
@@ -75,16 +71,16 @@
 
       a {
         text-decoration: none;
-        color: black;
-        font-size: 0.9rem;
+        color: vars.$color-dark;
+        font-size: vars.$text-sm1;
         width: 100%;
         border-bottom: 1px solid vars.$color-light;
-        padding: 0.3rem;
+        padding: vars.$space-xxs1;
         transition: 0.3s;
         cursor: pointer;
 
         @media screen and (min-width: vars.$breakpoint-lg) {
-          margin-left: 1rem;
+          margin-left: vars.$space-md;
           border-bottom: none;
 
           &:hover {
@@ -107,7 +103,7 @@
   width: 25px;
   height: 25px;
   background-image: url(../icons/menu.svg);
-  margin-right: 1rem;
+  margin-right: vars.$space-md;
   transition: 0.3s;
   cursor: pointer;
 
@@ -123,10 +119,10 @@
 
 .logo {
   font-family: vars.$font-title;
-  font-size: 1.3rem !important;
+  font-size: vars.$text-xl !important;
   color: vars.$color-primary !important;
   text-decoration: none;
-  margin-left: 1.5rem;
+  margin-left: vars.$space-xl;
   transition: 0.3s;
   letter-spacing: -0.04cm;
 

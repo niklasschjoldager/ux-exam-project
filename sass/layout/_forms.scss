@@ -28,13 +28,13 @@
 
   &__input {
     padding-inline: vars.$space-md;
-    height: 3rem;
+    height: vars.$input-height;
     width: 100%;
   }
 
   &__icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: vars.$space-xl;
+    height: vars.$space-xl;
   }
 
   &__button {
@@ -72,7 +72,7 @@
     padding-inline: vars.$space-md;
     padding-block: vars.$space-md;
     resize: vertical;
-    min-height: 10rem;
+    min-height: vars.$space-5xl * 2;
   }
 }
 
@@ -97,9 +97,9 @@
   }
 
   &__image {
-    border-radius: 9999px;
-    width: 5rem;
-    height: 5rem;
+    border-radius: vars.$border-rounded;
+    width: vars.$space-5xl;
+    height: vars.$space-5xl;
     object-fit: cover;
   }
 }

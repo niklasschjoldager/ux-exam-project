@@ -39,10 +39,10 @@
     li a{
       text-decoration: none;
       color: vars.$color-dark;
-      font-size: 0.9rem;
+      font-size: vars.$text-sm1;
       width: 100%;
       border-bottom: 1px solid vars.$color-light;
-      padding: 0.3rem;
+      padding: vars.$space-xxs1;
       transition: 0.3s;
       text-align: center;
       background-color: vars.$color-white;
@@ -60,7 +60,7 @@
       visibility: visible;
       pointer-events: all;
       opacity: 1;
-      box-shadow: 2.8px 2.6px 2.2px rgb(0 0 0 / 1%), 6.7px 6.2px 5.3px rgb(0 0 0 / 1%), 12.5px 11.6px 10px rgb(0 0 0 / 1%), 22.3px 20.8px 17.9px rgb(0 0 0 / 1%), 41.8px 38.9px 33.4px rgb(0 0 0 / 1%), 100px 93px 80px rgb(0 0 0 / 2%);
+      box-shadow: vars.$box-shadow;
       
     }
   }
@@ -74,7 +74,7 @@
     background-image: none;
     border: none;
     border-radius: 0;
-    box-shadow: 2.8px 2.6px 2.2px rgb(0 0 0 / 1%), 6.7px 6.2px 5.3px rgb(0 0 0 / 1%), 12.5px 11.6px 10px rgb(0 0 0 / 1%), 22.3px 20.8px 17.9px rgb(0 0 0 / 1%), 41.8px 38.9px 33.4px rgb(0 0 0 / 1%), 100px 93px 80px rgb(0 0 0 / 2%);
+    box-shadow: vars.$box-shadow;
   
     .profile{
       width: 100%;
