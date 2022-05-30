@@ -67,4 +67,39 @@
     position: relative;
     align-items: center;
   }
+
+  &__textarea {
+    padding-inline: vars.$space-md;
+    padding-block: vars.$space-md;
+    resize: vertical;
+    min-height: 10rem;
+  }
+}
+
+.form-image-picker {
+  display: grid;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    gap: vars.$space-md;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$space-sm;
+    justify-content: center;
+  }
+
+  &__remove-button {
+    font-size: vars.$text-sm;
+  }
+
+  &__image {
+    border-radius: 9999px;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+  }
 }

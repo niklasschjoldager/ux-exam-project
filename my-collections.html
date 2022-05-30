@@ -12,8 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/index.js" defer></script>
   </head>
-  <body>
+  <body class="account-page">
     <header class="navigation_wrapper">
       <div class="navigation">
         <a class="logo" href="./index.html">Cooklish</a>
@@ -28,35 +29,32 @@
       </div>
     </header>
 
-    <main>
+    <main class="site-content">
       <aside class="sidebar">
         <div class="profile">
-          <img class="profile__image" src="#" alt="#" />
+          <img class="profile__image" src="/images/marie-profile-pic.png" alt="Marie B. Henriksen" />
           <h2 class="profile__name">Marie B. Henriksen</h2>
-          <ul>
+          <ul class="profile__list">
             <li>
-              <a href="#">My recipes</a>
+              <a href="./account.html">My recipes</a>
             </li>
             <li>
-              <a href="#">My collections</a>
+              <a href="./my-collections.html">My collections</a>
+            </li>
+            <li>
+              <a href="./settings.html">Settings</a>
+            </li>
+            <li>
+              <a href="#">Logout</a>
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
-            <button>Settings</button>
-          </li>
-          <li>
-            <button>Logout</button>
-          </li>
-        </ul>
       </aside>
       <section>
-        <div>
-          <h1>My collections</h1>
-          <div>
-            <a href="#">Cancel</a>
-            <button>Save</button>
+        <div class="content-header">
+          <h1>My Collections</h1>
+          <div class="content-header__actions">
+            <button class="content-header__submit">Create Collection</button>
           </div>
         </div>
       </section>
