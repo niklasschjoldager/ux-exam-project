@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as vars;
+
+.explore{
+    margin-bottom: vars.$space-4xl;
+    &:first-of-type{
+        margin-top: vars.$space-4xl;
+    }
+    &__recipes{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: vars.$space-3xl;
+        margin-top: vars.$space-lg;
+    }
+
+    &__category{
+        font-size: vars.$text-3xl;
+    }
+}

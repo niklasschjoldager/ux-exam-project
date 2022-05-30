@@ -39,17 +39,20 @@ function showRecipe() {
 async function showSearchResults() {
   let jsonData = await getData();
   console.log(jsonData);
-  const templatePointer = document.querySelector(".search-results-template");
-  const sectionPointer = document.querySelector(".search-results");
+  const templatePointer = document.querySelector(".recipes-template");
+  const sectionPointer = document.querySelectorAll(".results");
+  console.log(sectionPointer);
   sectionPointer.innerHTML = "";
-  jsonData.forEach((recipe) => {
-    console.log(recipe);
-    const clone = templatePointer.cloneNode(true).content;
-    clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
-    clone.querySelector(".recipe__name").textContent = recipe.name;
-    clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-    clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
-    sectionPointer.appendChild(clone);
+  sectionPointer.forEach((section) => {
+    jsonData.forEach((recipe) => {
+      console.log(recipe);
+      const clone = templatePointer.cloneNode(true).content;
+      clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
+      clone.querySelector(".recipe__name").textContent = recipe.name;
+      clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
+      clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+      section.appendChild(clone);
+    });
   });
 
   function getReviews(recipe) {
