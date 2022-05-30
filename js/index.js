@@ -52,7 +52,7 @@ async function displayPopularRecipes() {
   if (!template) return;
 
   const popularRecipes = await getData();
-  console.log(popularRecipes)
+  console.log(popularRecipes);
 
   popularRecipes.forEach((recipe, i) => {
     if (i <= 2) {
@@ -90,10 +90,10 @@ async function displayNewRecipes() {
       clone.querySelector(".recipe__title").textContent = recipe.name;
 
       if (recipe.type === "recipe") {
-      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
-      clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-      clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
-      clone.querySelector(".recipe__chip").remove();
+        clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
+        clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
+        clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+        clone.querySelector(".recipe__chip").remove();
       } else {
         clone.querySelector(".recipe__text svg").textContent = "";
         clone.querySelector(".recipe__author").textContent = "AD";
@@ -111,7 +111,6 @@ function redirectToRecipe(recipeName) {
 
 async function displayRecipe() {
   const allRecipes = await getData();
-
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -172,7 +171,7 @@ async function showSearchResults() {
   const templatePointer = document.querySelector(".recipes-template");
   const sectionPointer = document.querySelector(".results");
 
-  if (!templatePointer) return;
+  if (!sectionPointer) return;
 
   let jsonData = await getData();
   jsonData = jsonData.sort(() => Math.random() - Math.random()).slice(0, 14);
