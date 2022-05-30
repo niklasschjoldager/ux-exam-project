@@ -8,7 +8,7 @@
   left: 0;
   background-color: vars.$color-white;
   display: flex;
-  align-content: flex-end;
+  align-content: space-between;
   z-index: 10;
 
   box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
@@ -22,6 +22,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media screen and (min-width: vars.$breakpoint-sm) {
+        justify-content: flex-end;
+    }
 
     &.active {
       .burger_icon {
