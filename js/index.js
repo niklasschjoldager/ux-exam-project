@@ -10,9 +10,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function toggleSidebar() {
   if (document.querySelector(".sidebar")) {
-    document.querySelector(".sidebar").addEventListener("click", () => {
-      document.querySelector(".sidebar").classList.toggle("js-open");
-    });
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      document.querySelector(".sidebar").addEventListener("click", () => {
+        document.querySelector(".sidebar").classList.toggle("js-open");
+      });
+    }
   }
 }
 
