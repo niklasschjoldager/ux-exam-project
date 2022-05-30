@@ -57,7 +57,8 @@ async function showSearchResults() {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
     } else {
-      clone.querySelector(".recipe__text").textContent = "";
+      clone.querySelector(".recipe__text svg").textContent = "";
+      clone.querySelector(".recipe__author").textContent = "AD";
     }
 
     sectionPointer.appendChild(clone);
@@ -80,7 +81,8 @@ async function displayExploreRecipes() {
         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
         clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
       } else {
-        clone.querySelector(".recipe__text").textContent = "";
+        clone.querySelector(".recipe__text svg").textContent = "";
+        clone.querySelector(".recipe__author").textContent = "AD";
       }
 
       section.appendChild(clone);
