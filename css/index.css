@@ -685,7 +685,7 @@ section {
 }
 .recipe-view__details {
   display: flex;
-  margin-left: 1rem;
+  margin-left: 1.3xsrem;
   margin-top: 1rem;
 }
 .recipe-view__ad-image {
@@ -760,6 +760,23 @@ section {
 }
 .reviews__input {
   width: 100%;
+}
+.reviews__button {
+  width: 150px;
+  height: 30px;
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  background-color: #579e93;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  font-family: "Yeseva One", cursive;
+}
+.reviews__button:hover {
+  background-color: #f7d7b4;
+  transition: 0.3s;
 }
 
 .search {

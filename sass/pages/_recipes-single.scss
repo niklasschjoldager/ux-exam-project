@@ -27,7 +27,7 @@
     }
     &__details{
         display: flex;
-        margin-left: 1rem;
+        margin-left: 1.3xsrem;
         margin-top: 1rem;
     }
     &__ad-image{
@@ -106,4 +106,24 @@
     &__input{
         width: 100%;
     }
+
+    &__button{
+        width: 150px;
+        height: 30px;
+        margin-top: 1rem;
+        align-self: center;
+        cursor: pointer;
+        background-color: vars.$color-primary;
+        border: none;
+        color: vars.$color-white;
+        border-radius: 0.5rem;
+        transition: .3s;
+        font-family: "Yeseva One", cursive;
+        &:hover {
+            background-color: vars.$color-tertiary;
+            transition: .3s;
+        }
+
+    }
+
 }
