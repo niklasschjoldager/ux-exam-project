@@ -1,5 +1,6 @@
 $text-xs: 0.8rem;
 $text-sm: 0.875rem;
+$text-sm1: 0.9rem;
 $text-base: 1rem;
 $text-lg: 1.125rem;
 $text-xl: 1.25rem;
@@ -25,8 +26,10 @@ $color-danger: #d42447;
 $color-light: #f5f5f5;
 $color-white: #ffff;
 $color-dark: #000000;
+$color-star: rgb(231, 200, 25);
 
 $space-xxs: 0.2rem;
+$space-xxs1: 0.3rem;
 $space-xs: 0.5rem;
 $space-sm: 0.75rem;
 $space-md: 1rem;
@@ -36,8 +39,10 @@ $space-1xl: 2rem;
 $space-2xl: 2.5rem;
 $space-3xl: 3rem;
 $space-4xl: 4rem;
+$space-5xl: 5rem;
 $space-6xl: 6rem;
 $space-8xl: 8rem;
+$space-10xl: 10rem;
 
 $border-radius-sm: 0.5rem;
 $border-radius-md: 2rem;

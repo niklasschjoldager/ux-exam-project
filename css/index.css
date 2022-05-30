@@ -36,7 +36,7 @@ legend {
 h1 {
   text-align: center;
   font-size: 2.25rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
   line-height: 2.5rem;
 }
 @media screen and (min-width: 768px) {
@@ -108,7 +108,7 @@ h1 {
   letter-spacing: 0cm;
 }
 .footer__logo-seperator {
-  margin: 0 0.8rem;
+  margin: 0 0.75rem;
 }
 
 .form-field {
@@ -260,7 +260,7 @@ h1 {
 }
 .navigation_wrapper .navigation nav a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-size: 0.9rem;
   width: 100%;
   border-bottom: 1px solid #f5f5f5;
@@ -304,7 +304,7 @@ h1 {
 
 .logo {
   font-family: "Yeseva One", cursive;
-  font-size: 1.3rem !important;
+  font-size: 1.25rem !important;
   color: #579e93 !important;
   text-decoration: none;
   margin-left: 1.5rem;
@@ -535,7 +535,7 @@ section {
   visibility: visible;
   pointer-events: all;
   opacity: 1;
-  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.01), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.01), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.01), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.01), 100px 93px 80px rgba(0, 0, 0, 0.02);
+  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
 }
 @media screen and (min-width: 768px) {
   .sidebar {
@@ -547,7 +547,7 @@ section {
     background-image: none;
     border: none;
     border-radius: 0;
-    box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.01), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.01), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.01), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.01), 100px 93px 80px rgba(0, 0, 0, 0.02);
+    box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
   }
   .sidebar .profile {
     width: 100%;
@@ -694,12 +694,12 @@ section {
 }
 @media screen and (max-width: 640px) {
   .hero-banner__label {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
   }
 }
 .hero-banner__seachfield-wrapper {
   position: relative;
-  margin-top: 0.8rem;
+  margin-top: 0.75rem;
 }
 .hero-banner__searchicon {
   position: absolute;
@@ -850,13 +850,13 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.2rem 0.7rem;
+  padding: 0.2rem 0.75rem;
   background-color: #d5e8e5;
   font-size: 0.875rem;
 }
 
 .ingredient::marker {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   margin-right: 1.25rem;
 }
 
