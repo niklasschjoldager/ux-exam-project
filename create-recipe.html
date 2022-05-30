@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Cooklish | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="account-page">
+    <div class="navigation_wrapper">
+      <div class="navigation">
+        <a class="logo" href="./index.html">Cooklish</a>
+        <img class="burger_icon" src="./icons/menu.svg" alt="Burger menu" />
+        <nav>
+          <a href="./explore.html">Explore</a>
+          <a href="./account.html">Account</a>
+          <a href="./search.html">Search</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="site-content">
+      <aside class="sidebar">
+        <div class="profile">
+          <img class="profile__image" src="#" alt="#" />
+          <h2 class="profile__name">Marie B. Henriksen</h2>
+          <ul>
+            <li>
+              <a href="#">My recipes</a>
+            </li>
+            <li>
+              <a href="#">My collections</a>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <button>Settings</button>
+          </li>
+          <li>
+            <button>Logout</button>
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <div class="content-header">
+          <h1>Create recipe</h1>
+          <div class="content-header__actions">
+            <a class="content-header__cancel" href="#">Cancel</a>
+            <button class="content-header__submit">Save</button>
+          </div>
+        </div>
+        <form class="recipe-form" action="#">
+          <fieldset class="recipe-form__section">
+            <legend class="text-2xl recipe-form__title">About</legend>
+            <label class="form-field">
+              <span class="form-field__label">Name</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" name="name" type="text" placeholder="Enter recipe name" />
+                </div>
+              </div>
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Servings</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" type="text" name="servings" placeholder="Enter servings" />
+                </div>
+              </div>
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Preparation time</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input
+                    class="form-field__input"
+                    type="text"
+                    name="preparationTime"
+                    placeholder="Enter preparation time"
+                  />
+                </div>
+              </div>
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Cook time</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" type="text" placeholder="Enter cook time" />
+                </div>
+              </div>
+            </label>
+          </fieldset>
+
+          <fieldset class="recipe-form__section">
+            <legend class="text-2xl recipe-form__title">Ingredients</legend>
+            <label class="form-field form-field--right-icon form-field--side-icon">
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" type="text" placeholder="Section title" />
+                  <button class="form-field__button form-field__button--input" type="button">
+                    <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+                  </button>
+                </div>
+                <button class="form-field__button" type="button">
+                  <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+                </button>
+              </div>
+            </label>
+            <label class="form-field form-field--right-icon form-field--side-icon">
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" type="text" placeholder="Enter ingredient" />
+                  <button class="form-field__button form-field__button--input" type="button">
+                    <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+                  </button>
+                </div>
+                <button class="form-field__button" type="button">
+                  <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+                </button>
+              </div>
+            </label>
+            <button class="text-sm form-field__button form-field__button--add">
+              <img height="24" width="24" src="./icons/plus-circle.svg" alt="Add direction" class="form-field__icon" />
+              <span>Add ingredient</span>
+            </button>
+            <button class="text-sm form-field__button form-field__button--add">
+              <img height="24" width="24" src="./icons/plus-circle.svg" alt="Add direction" class="form-field__icon" />
+              <span>Add section</span>
+            </button>
+          </fieldset>
+
+          <fieldset class="recipe-form__section">
+            <legend class="text-2xl recipe-form__title">Directions</legend>
+            <label class="form-field form-field--right-icon form-field--side-icon">
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input class="form-field__input" type="text" placeholder="1 hour" />
+                  <button class="form-field__button form-field__button--input" type="button">
+                    <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+                  </button>
+                </div>
+                <button class="form-field__button" type="button">
+                  <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+                </button>
+              </div>
+            </label>
+            <button class="text-sm form-field__button form-field__button--add">
+              <img height="24" width="24" src="./icons/plus-circle.svg" alt="Add direction" class="form-field__icon" />
+              <span>Add step</span>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

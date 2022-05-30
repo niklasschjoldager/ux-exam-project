@@ -36,17 +36,13 @@ $space-3xl: 3rem;
 $space-4xl: 4rem;
 $space-8xl: 8rem;
 
-$border-radius-sm: .5rem;
+$border-radius-sm: 0.5rem;
 $border-radius-md: 2rem;
 $border-radius-bg: 3rem;
 
-$box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006),
-6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
-12.5px 11.6px 10px rgba(0, 0, 0, 0.01),
-22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
-41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014),
-100px 93px 80px rgba(0, 0, 0, 0.02)
-;
+$box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
+  12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
+  41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
 
 $max-width: 1280px;
 
@@ -57,3 +53,5 @@ $breakpoint-sm: 640px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
+
+$nav-height: 50px;

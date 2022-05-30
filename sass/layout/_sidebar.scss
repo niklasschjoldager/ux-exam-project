@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as vars;
+
+.sidebar {
+  display: none;
+
+  @media screen and (min-width: vars.$breakpoint-md) {
+    display: flex;
+  }
+}

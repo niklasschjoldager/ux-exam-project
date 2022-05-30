@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as vars;
+
+.recipe-form {
+  display: grid;
+  gap: vars.$space-sm;
+
+  &__section {
+    border: none;
+    padding-block: vars.$space-xl;
+    display: flex;
+    flex-direction: column;
+    gap: vars.$space-sm;
+    align-items: flex-start;
+  }
+
+  &__icon-field {
+    display: grid;
+    grid-template-columns: auto 1.5em;
+    width: 100%;
+  }
+}
