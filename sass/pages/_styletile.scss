@@ -40,9 +40,13 @@
           background-color: $color;
           border: 1px solid vars.$color-dark;
           border-radius: vars.$border-radius-sm;
-          &:before {
-            content: "{$name}";
+          &:after {
+            content: "#{$name}";
+            padding: vars.$space-md;
           }
+        }
+        .color-dark:after {
+          color: vars.$color-light;
         }
       }
     }
