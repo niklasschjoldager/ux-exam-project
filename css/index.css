@@ -516,6 +516,109 @@ section {
   font-size: 1rem;
 }
 
+.recipe-view__title-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recipe-view__title {
+  width: 100%;
+  margin-top: 6rem;
+}
+.recipe-view__image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+.recipe-view__details-icon {
+  width: 20px;
+  height: auto;
+  fill: #579e93;
+}
+.recipe-view__icon-text {
+  color: #579e93;
+  margin-left: 0.5rem;
+}
+.recipe-view__details {
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.recipe-view__ad-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.recipe-view__info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 6rem;
+}
+.recipe-view__ingrediens {
+  list-style-position: inside;
+  background-color: white;
+  padding: 1.25rem;
+  box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008), 12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012), 41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
+}
+.recipe-view__directions {
+  list-style-position: inside;
+  padding: 1.25rem;
+  margin-left: 1.25rem;
+}
+.recipe-view__ad {
+  margin: 4rem 0;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.recipe-view__ad:hover {
+  transition: 0.3s;
+  opacity: 0.9;
+}
+.recipe-view__chip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2rem 0.7rem;
+  background-color: #d5e8e5;
+  font-size: 0.875rem;
+}
+
+.ingredient::marker {
+  font-size: 0.7rem;
+}
+
+.direction {
+  margin-bottom: 1rem;
+}
+.direction::marker {
+  background-color: #d5e8e5;
+  font-weight: bold;
+  color: #579e93;
+}
+
+.reviews {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.reviews__star {
+  width: 25px;
+  height: 25px;
+  fill: grey;
+}
+.reviews__star:hover {
+  fill: rgb(231, 200, 25);
+}
+.reviews__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.reviews__input {
+  width: 100%;
+}
+
 .search {
   display: flex;
   position: relative;

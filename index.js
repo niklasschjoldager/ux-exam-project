@@ -77,36 +77,33 @@ async function displayRecipe(){
     const recipeViewSection = document.querySelector(".recipe-view");
 
     recipeViewSection.querySelector(".recipe-view__image").src = `./images/${selcetedRecipe.imageURL}`
+
+    recipeViewSection.querySelector(".recipe-view__title").textContent = selcetedRecipe.name;
+    recipeViewSection.querySelector(".js-preptime-text").textContent = (selcetedRecipe.cookTime + selcetedRecipe.preparationTime) + " min.";
+    recipeViewSection.querySelector(".js-servings-text").textContent = selcetedRecipe.servings;
     
     ingredientsContainer = recipeViewSection.querySelector(".recipe-view__ingrediens");
     selcetedRecipe.ingredients.forEach((ingredient) => {
-        console.log(ingredient)
-        ingredientsContainer.insertAdjacentHTML("afterbegin", `<li class="ingredient"><span class="ingredient__text">${ingredient.name}</span><span class="ingredient__quantity">${ingredient.quantity}</span></li>`);
+        ingredientsContainer.insertAdjacentHTML("afterbegin", `<li class="ingredient"><span class="ingredient__quantity">${ingredient.quantity}</span> <span class="ingredient__text">${ingredient.name}</span></li>`);
     });
 
-    
+    directionsContainer = recipeViewSection.querySelector(".recipe-view__directions");
+    selcetedRecipe.directions.forEach((direction) => {
 
-    // .src = `./images/${selcetedRecipe.imageURL}`
-    // function function1() {
-    //     var ul = document.getElementById("list");
-    //     var li = document.createElement("li");
-    //     li.appendChild(document.createTextNode("Four"));
-    //     ul.appendChild(li);
-    //   }
+        directionsContainer.insertAdjacentHTML("afterbegin", `<li class="direction">${direction}</li>`);
+    });
 
-    // newRecipes.forEach((recipe, i) => {
-    //     if (i >= 3 && i <= 5){
-    //         const clone = document.querySelector("#frontpage-recipes-template").cloneNode(true).content;
+    recipeViewSection.querySelector(".recipe-view__ad-image").src = `./images/${allRecipes[14].imageURL}`
+
+    selcetedRecipe.reviews.forEach((review) => {
+            const clone = document.querySelector(".recipe-reviews-template").cloneNode(true).content;
+            console.log(review)
+            clone.querySelector(".review__rating").textContent = review.rating;
+            clone.querySelector(".review__title").textContent = review.title;
+            clone.querySelector(".review__text").textContent = review.comment;
     
-    //         clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
-    //         clone.querySelector(".recipe__title").textContent = recipe.name;
-    //         clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe));
-    //         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-    //         clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
-    
-    //         document.querySelector(".new-recipes__container").appendChild(clone);
-    //     }
-    // });
+            document.querySelector(".reviews__all-recipe-reviews").appendChild(clone);
+    });
 }
 
 async function showSearchResults() {

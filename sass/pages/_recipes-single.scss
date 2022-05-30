@@ -1,0 +1,109 @@
+@use "../abstracts/variables" as vars;
+
+.recipe-view__title-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recipe-view{
+    &__title{
+        width: 100%;
+        margin-top: vars.$space-6xl;
+    }
+    &__image{
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__details-icon{
+        width: 20px;
+        height:auto;
+        fill: vars.$color-primary;
+    }
+    &__icon-text{
+        color: vars.$color-primary;
+        margin-left: .5rem;
+    }
+    &__details{
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    &__ad-image{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__info-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        margin-top: vars.$space-6xl;
+    }
+    &__ingrediens{
+        list-style-position: inside;
+        background-color: vars.$color-white;
+        padding: vars.$space-lg;
+        box-shadow: vars.$box-shadow;
+    }
+    &__directions{
+        list-style-position: inside;
+        padding: vars.$space-lg;
+        margin-left: vars.$space-lg;
+    }
+    &__ad{
+        margin: vars.$space-4xl 0;
+        position: relative;
+        cursor: pointer;
+
+        transition: .3s;
+        &:hover {
+            transition: .3s;
+            opacity: .9;
+        }
+    }
+    &__chip{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .2rem .7rem;
+        background-color: vars.$color-secondary;
+        font-size: vars.$text-sm;
+    }
+}
+.ingredient::marker {
+    font-size: 0.7rem;
+}
+
+.direction{
+    margin-bottom: vars.$space-md;
+    
+    &::marker{
+        background-color: vars.$color-secondary;
+        font-weight: bold;
+        color: vars.$color-primary;
+    
+    }
+}
+
+.reviews{
+    max-width: vars.$max-width-sm;
+    margin: 0 auto;
+
+    &__star{
+        width: 25px;
+        height: 25px;
+        fill: grey;
+        &:hover{
+            fill: rgb(231, 200, 25);
+        }
+    }
+    &__input-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__input{
+        width: 100%;
+    }
+}
