@@ -10,14 +10,6 @@
       grid-template-columns: 300px auto;
     }
   }
-
-  section {
-    margin: 0;
-  }
-
-  h1 {
-    margin-top: 0;
-  }
 }
 
 .content-header {
@@ -56,5 +48,6 @@
     padding-inline: vars.$space-xl;
     padding-block: vars.$space-xs;
     color: vars.$color-light;
+    text-decoration: none;
   }
 }
