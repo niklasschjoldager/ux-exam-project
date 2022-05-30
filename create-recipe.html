@@ -8,10 +8,7 @@
     <title>Cooklish | Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet" />
     <script src="./js/index.js" defer></script>
   </head>
   <body class="account-page">
@@ -32,9 +29,9 @@
     <main class="site-content">
       <aside class="sidebar">
         <div class="profile">
-          <img class="profile__image" src="#" alt="#" />
+          <img class="profile__image" src="/images/marie-profile-pic.png" alt="#" />
           <h2 class="profile__name">Marie B. Henriksen</h2>
-          <ul>
+          <ul class="profile__list">
             <li>
               <a href="#">My recipes</a>
             </li>
@@ -43,12 +40,12 @@
             </li>
           </ul>
         </div>
-        <ul>
+        <ul class="sidebar__actions">
           <li>
-            <button>Settings</button>
+            <a>Settings</a>
           </li>
           <li>
-            <button>Logout</button>
+            <a>Logout</a>
           </li>
         </ul>
       </aside>
@@ -83,12 +80,7 @@
               <span class="form-field__label">Preparation time</span>
               <div class="form-field__control">
                 <div class="form-field__input-container">
-                  <input
-                    class="form-field__input"
-                    type="text"
-                    name="preparationTime"
-                    placeholder="Enter preparation time"
-                  />
+                  <input class="form-field__input" type="text" name="preparationTime" placeholder="Enter preparation time" />
                 </div>
               </div>
             </label>
