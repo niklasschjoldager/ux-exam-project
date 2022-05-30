@@ -7,18 +7,23 @@
 }
 
 .recipe-view{
+    margin-top: 0;
+
     &__title{
         width: 100%;
         margin-top: vars.$space-3xl;
 
         @media screen and (min-width: vars.$breakpoint-md) {
-            margin-top: vars.$space-6xl;
+            margin-top: vars.$space-4xl;
         }  
     }
     &__image{
-        height: 350px;
+        height: 300px;
         width: 100%;
         object-fit: cover;
+        @media screen and (min-width: vars.$breakpoint-md) {
+            height: 400px;
+        }  
     }
     &__details-icon{
         width: 20px;
@@ -31,8 +36,13 @@
     }
     &__details{
         display: flex;
-        margin-left: vars.$space-xl;
-        margin-top: vars.$space-xl;
+        margin-left: vars.$space-xs;
+        margin-top: vars.$space-xs;
+
+        @media screen and (min-width: vars.$breakpoint-md) {
+            margin-left: vars.$space-xl;
+            margin-top: vars.$space-xl;
+        }  
     }
     &__ad-image{
         height: 200px;
@@ -43,7 +53,7 @@
         @media screen and (min-width: vars.$breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            margin-top: vars.$space-6xl;
+            margin-top: vars.$space-4xl;
         }  
     }
     &__ingrediens{

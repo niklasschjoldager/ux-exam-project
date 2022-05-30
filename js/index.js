@@ -59,7 +59,7 @@ async function displayPopularRecipes() {
 
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
-      clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
+      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
       clone.querySelector(".recipe__ratings").textContent = "5 (19)";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
@@ -79,7 +79,7 @@ async function displayNewRecipes() {
 
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
-      clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
+      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
