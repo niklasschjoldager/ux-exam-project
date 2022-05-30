@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as vars;
+
+.footer{
+    height: auto;
+    width: 100vw;
+    background-color: vars.$color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+
+    &__logo{
+        color: vars.$color-primary;
+        font-family: vars.$font-title;
+        font-size: vars.$text-lg;
+        letter-spacing: -0.04cm;
+    }
+
+    &__logo-text{
+        font-size: vars.$text-sm;
+        font-family: vars.$font-body;
+        letter-spacing: 0cm;
+    }
+    &__logo-seperator{
+        margin: 0 .8rem;
+    }
+}

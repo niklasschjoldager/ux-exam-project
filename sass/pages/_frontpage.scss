@@ -2,6 +2,9 @@
 .frontpage{
     position: relative;
 }
+.frontpage-main{
+    max-width: unset !important;
+}
 .hero-banner{
     width: 100vw;
     height: 70vh;
@@ -42,15 +45,28 @@
             font-size: 1.1rem;
         }  
     }
+    &__seachfield-wrapper{
+        position: relative;
+        margin-top: .8rem;
+    }
+    &__searchicon{
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        transform: translateY(-50%);
+
+        width: 20px;
+        height: 20px;
+        fill: vars.$color-white;
+    }
     &__searchfield{
         max-width: 400px;
         width: 80vw;
-        background-color: transparent;
+        background-color: vars.$color-white;
         border: 1px solid vars.$color-white;
         height: 40px;
         border-radius: vars.$border-radius-bg;
-        margin-top: .8rem;
-        opacity: 0.6;
+        opacity: 0.3;
         transition: .3s;
         padding: 0 1rem;
         color: vars.$color-white;
@@ -58,6 +74,7 @@
         &:hover{
             opacity: 1;
             transition: .3s;
+            background-color: transparent;
         }
 
         &:focus{
@@ -65,18 +82,22 @@
             outline: none;
             box-shadow: none;
             opacity: 1;
+            background-color: transparent;
         }
     }
 }
+.popular-recipes{
+    margin-top: vars.$space-4xl;
+}
 
-.popular-recipes__container{
+.popular-recipes__container, .new-recipes__container{
     margin-bottom: vars.$space-4xl;
-    
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: vars.$space-3xl;
-    margin-top: vars.$space-lg;
-    margin-top: vars.$space-4xl;
+    margin-top: vars.$space-xl;
+
     .recipe {
         &__img{
             width: 100%;
