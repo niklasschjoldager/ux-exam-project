@@ -24,16 +24,24 @@
             </div>
         </header>
 
+        <main class="frontpage-main">
         <section class="hero-banner">
             <div class="hero-banner__overlay"></div>
             <div class="hero-banner__search-wrapper">
                 <label class="hero-banner__label text-xl">What are you looking for?</label>
-                <input class="hero-banner__searchfield" type="text" name="search" autocomplete="off">
+                <div class="hero-banner__seachfield-wrapper">
+                    <input class="hero-banner__searchfield" type="text" name="search" autocomplete="off">
+                    <svg class="hero-banner__searchicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g>
+                            <rect width="24" height="24" opacity="0"/>
+                            <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"/>
+                            </g>
+                        </svg>
+                </div>
             </div>
             <img class="hero-banner__img" src="./images/edgar-castrejon-4Q_xlBOaCso-unsplash.jpg" alt="">
         </section>
-        
-        <main>
+        <div class="main">
             <dialog class="sign-up modal">
                 <h2 class="modal__title">Sign Up</h2>
                 <form class="modal__form" method="dialog">
@@ -82,13 +90,38 @@
                 <h2 class="popular-recipes__title">Popular recipes</h2>
                 <div class="popular-recipes__container"></div>
             </section>
+            <section class="new-recipes">
+                <h2 class="new-recipes__title">New recipes</h2>
+                <div class="new-recipes__container"></div>
+            </section>
+        </div>
         </main>
 
-    <template class="popular-recipes-template">
-      <article class="recipe">
-        <img class="recipe__img" src="" alt="" />
-        <h4 class="recipe__title"></h4>
-      </article>
+    <template id="frontpage-recipes-template" class="popular-recipes-template new-recipes-template">
+        <article class="recipe">
+            <img class="recipe__img" src="" alt="" />
+            <h2 class="recipe__title"></h2>
+            <div class="recipe__text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                    <g data-name="star">
+                    <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0" />
+                    <path
+                        d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18zM12 16.1a.92.92 0 0 1 .46.11l3.77 2-.72-4.21a1 1 0 0 1 .29-.89l3-2.93-4.2-.62a1 1 0 0 1-.71-.56L12 5.25 10.11 9a1 1 0 0 1-.75.54l-4.2.62 3 2.93a1 1 0 0 1 .29.89l-.72 4.16 3.77-2a.92.92 0 0 1 .5-.04z"
+                    />
+                    </g>
+                </g>
+                </svg>
+                <span class="recipe__ratings"></span>
+                <p class="recipe__author"></p>
+            </div>
+        </article>
     </template>
-  </body>
+    
+    <footer class="footer">
+        <div>
+            <p class="footer__logo">Cooklish<span class="footer__logo-seperator">|</span><span class="footer__logo-text">Share your recipes with the world</span></p>
+        </div>
+    </footer>
+</body>
 </html>

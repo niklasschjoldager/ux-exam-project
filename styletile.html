@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Styletile | Cooklish</title>
-        <link rel="stylesheet" href="./css/index.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body class="styletile">
-        <label class="form-field form-field--right-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styletile | Cooklish</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet" />
+  </head>
+  <body class="styletile">
+    <main>
+      <h1>Styletile</h1>
+
+      <section id="fonts">
+        <h2>Fonts</h2>
+        <h1>"Yeseva One" as display font</h1>
+        <p>"Palanquin" as body font</p>
+      </section>
+
+      <section id="colors">
+        <h2>Colors</h2>
+        <div class="color-wrapper">
+            <div class="color-color-primary"></div>
+            <div class="color-color-secondary"></div>
+            <div class="color-color-tertiary"></div>
+            <div class="color-color-light"></div>
+            <div class="color-color-white""></div>
+            <div class="color-color-dark"></div>
+        </div>
+      </section>
+
+      <section id="UI-elements">
+          <h2>UI-elements</h2>
+          
+      </section>
+
+      <section id="form">
+        <h2>Form elements</h2>
+        <form>
+          <label class="form-field form-field--right-icon">
             <span class="form-field__label">Cook time</span>
             <div class="form-field__control">
-                <input
-                    class="form-field__input"
-                    type="text"
-                    placeholder="1 hour"
-                />
-                <img
-                    src="./icons/menu.svg"
-                    alt="Move field"
-                    class="form-field__icon"
-                />
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <img src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
             </div>
-        </label>
-        <label class="form-field form-field--left-icon">
+          </label>
+          <label class="form-field form-field--left-icon">
             <span class="form-field__label">Prep time</span>
             <div class="form-field__control">
-                <input
-                    class="form-field__input"
-                    type="text"
-                    placeholder="1 hour"
-                />
-                <img
-                    src="./icons/menu.svg"
-                    alt="Move field"
-                    class="form-field__icon"
-                />
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <img src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
             </div>
-        </label>
-        <label class="form-field">
+          </label>
+          <label class="form-field">
             <span class="form-field__label">Cook time</span>
             <div class="form-field__control">
-                <input
-                    class="form-field__input"
-                    type="text"
-                    placeholder="1 hour"
-                />
+              <input class="form-field__input" type="text" placeholder="1 hour" />
             </div>
-        </label>
-    </body>
+          </label>
+        </form>
+      </section>
+
+    </main>
+  </body>
 </html>

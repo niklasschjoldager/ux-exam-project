@@ -2,6 +2,8 @@ window.addEventListener("DOMContentLoaded", () => {
   toggleMenu();
   displayPopularRecipes();
   showSearchResults();
+  displayNewRecipes();
+  displayExploreRecipes();
 });
 
 function toggleMenu() {
@@ -21,15 +23,38 @@ async function displayPopularRecipes() {
   const popularRecipes = await getData();
   console.log(popularRecipes);
 
-  popularRecipes.forEach((recipe) => {
-    const clone = document.querySelector(".popular-recipes-template").cloneNode(true).content;
+    popularRecipes.forEach((recipe, i) => {
+        if (i <= 2){
+            const clone = document.querySelector("#frontpage-recipes-template").cloneNode(true).content;
+    
+            clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
+            clone.querySelector(".recipe__title").textContent = recipe.name;
+            clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
+            clone.querySelector(".recipe__ratings").textContent = "5 (19)" ;
+            clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+    
+            document.querySelector(".popular-recipes__container").appendChild(clone);
+        }
+    });
+}
 
-    clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
-    clone.querySelector(".recipe__title").textContent = recipe.name;
-    clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
+async function displayNewRecipes() {
+    const newRecipes = await getData();
+    console.log(newRecipes);
 
-    document.querySelector(".popular-recipes__container").appendChild(clone);
-  });
+    newRecipes.forEach((recipe, i) => {
+        if (i >= 3 && i <= 5){
+            const clone = document.querySelector("#frontpage-recipes-template").cloneNode(true).content;
+    
+            clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
+            clone.querySelector(".recipe__title").textContent = recipe.name;
+            clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
+            clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
+            clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+    
+            document.querySelector(".new-recipes__container").appendChild(clone);
+        }
+    });
 }
 
 function showRecipe() {
@@ -40,31 +65,61 @@ async function showSearchResults() {
   let jsonData = await getData();
   console.log(jsonData);
   const templatePointer = document.querySelector(".recipes-template");
-  const sectionPointer = document.querySelectorAll(".results");
+  const sectionPointer = document.querySelector(".results");
   console.log(sectionPointer);
   sectionPointer.innerHTML = "";
-  sectionPointer.forEach((section) => {
-    jsonData.forEach((recipe) => {
-      console.log(recipe);
-      const clone = templatePointer.cloneNode(true).content;
-      clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
-      clone.querySelector(".recipe__name").textContent = recipe.name;
+  jsonData.forEach((recipe) => {
+    const clone = templatePointer.cloneNode(true).content;
+    clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
+    clone.querySelector(".recipe__name").textContent = recipe.name;
+
+    if (recipe.type === "recipe") {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+    } else {
+      clone.querySelector(".recipe__text svg").textContent = "";
+      clone.querySelector(".recipe__author").textContent = "AD";
+    }
+
+    sectionPointer.appendChild(clone);
+  });
+}
+
+async function displayExploreRecipes() {
+  let jsonData = await getData();
+  const templatePointer = document.querySelector(".recipes-template");
+  const sectionPointer = document.querySelectorAll(".explore__recipes");
+  sectionPointer.innerHTML = "";
+  sectionPointer.forEach((section) => {
+    let random = jsonData.sort(() => Math.random() - Math.random()).slice(0, 3);
+    random.forEach((recipe) => {
+      const clone = templatePointer.cloneNode(true).content;
+      clone.querySelector(".recipe__img").src = "./images/" + recipe.imageURL;
+      clone.querySelector(".recipe__title").textContent = recipe.name;
+
+      if (recipe.type === "recipe") {
+        clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
+        clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+      } else {
+        clone.querySelector(".recipe__text svg").textContent = "";
+        clone.querySelector(".recipe__author").textContent = "AD";
+      }
+
       section.appendChild(clone);
     });
   });
+}
 
-  function getReviews(recipe) {
-    console.log(recipe.reviews);
-    let ratings = [];
-    recipe.reviews.forEach((review) => {
-      console.log(review.rating);
-      ratings.push(review.rating);
-    });
-    console.log(ratings);
-    const sum = ratings.reduce((acc, cur) => acc + cur);
-    const average = sum / ratings.length;
-    return parseFloat(average.toFixed(1));
-  }
+function getReviews(recipe) {
+  console.log(recipe);
+  console.log(recipe.reviews);
+  let ratings = [];
+  recipe.reviews.forEach((review) => {
+    console.log(review.rating);
+    ratings.push(review.rating);
+  });
+  console.log(ratings);
+  const sum = ratings.reduce((acc, cur) => acc + cur);
+  const average = sum / ratings.length;
+  return parseFloat(average.toFixed(1));
 }

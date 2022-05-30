@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as vars;
 
 .recipe{
-    &__image{
+    &__image, &__img{
         width: 100%;
         height: 150px;
         object-fit: cover;

@@ -29,24 +29,24 @@
 
       <section class="explore">
         <h2 class="explore__category">Trending this week</h2>
-        <div class="explore__recipes results"></div>
+        <div class="popular-recipes__container"></div>
       </section>
 
       <section class="explore">
         <h2 class="explore__category">Drinks</h2>
-        <div class="explore__recipes results"></div>
+        <div class="explore__recipes"></div>
       </section>
 
       <section class="explore">
         <h2 class="explore__category">Main dishes</h2>
-        <div class="explore__recipes results"></div>
+        <div class="explore__recipes"></div>
       </section>
     </main>
 
-    <template class="recipes-template">
+    <template id="frontpage-recipes-template" class="recipes-template popular-recipes-template">
       <article class="recipe">
-        <img class="recipe__image" src="" alt="" />
-        <h2 class="recipe__name"></h2>
+        <img class="recipe__img" src="" alt="" />
+        <h2 class="recipe__title"></h2>
         <div class="recipe__text">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <g data-name="Layer 2">
@@ -63,5 +63,11 @@
         </div>
       </article>
     </template>
+
+    <footer class="footer">
+      <div>
+        <p class="footer__logo">Cooklish<span class="footer__logo-seperator">|</span><span class="footer__logo-text">Share your recipes with the world</span></p>
+      </div>
+    </footer>
   </body>
 </html>
