@@ -1019,7 +1019,7 @@ section {
 }
 .styletile__fonts h1 {
   margin-top: 0;
-  line-height: 2.7rem;
+  line-height: 2.75rem;
 }
 .styletile__colors .color-wrapper {
   display: grid;
@@ -1027,47 +1027,85 @@ section {
   grid-gap: 3rem;
   margin-top: 1.25rem;
 }
-.styletile__colors .color-wrapper .color-color-primary {
+.styletile__colors .color-wrapper .color-primary {
   width: 100%;
   height: 100px;
   background-color: #579e93;
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-color-secondary {
+.styletile__colors .color-wrapper .color-primary:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-secondary {
   width: 100%;
   height: 100px;
   background-color: #d5e8e5;
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-color-tertiary {
+.styletile__colors .color-wrapper .color-secondary:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-tertiary {
   width: 100%;
   height: 100px;
   background-color: #f7d7b4;
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-color-light {
+.styletile__colors .color-wrapper .color-tertiary:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-light {
   width: 100%;
   height: 100px;
   background-color: #f5f5f5;
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-color-white {
+.styletile__colors .color-wrapper .color-light:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-white {
   width: 100%;
   height: 100px;
   background-color: white;
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-color-dark {
+.styletile__colors .color-wrapper .color-white:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-dark {
   width: 100%;
   height: 100px;
   background-color: #000000;
   border: 1px solid #000000;
   border-radius: 0.5rem;
+}
+.styletile__colors .color-wrapper .color-dark:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-danger {
+  width: 100%;
+  height: 100px;
+  background-color: #d42447;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+}
+.styletile__colors .color-wrapper .color-danger:before {
+  content: "{$name}";
+}
+.styletile__colors .color-wrapper .color-star {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(231, 200, 25);
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+}
+.styletile__colors .color-wrapper .color-star:before {
+  content: "{$name}";
 }
 .styletile__elements .elements-searchfield {
   position: relative;

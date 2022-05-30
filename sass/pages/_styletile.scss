@@ -9,7 +9,7 @@
     &__fonts{
         h1{
             margin-top: 0;
-            line-height: 2.7rem;
+            line-height: vars.$text-height-5xl;
         }
     }
     
@@ -21,14 +21,17 @@
             grid-gap: vars.$space-3xl;
             margin-top: vars.$space-lg;
     
-            $colors:  ("color-primary":#579e93, "color-secondary": #d5e8e5,"color-tertiary": #f7d7b4, "color-light": #f5f5f5, "color-white": #ffff, "color-dark": #000000);
+            $colors:  ("color-primary": vars.$color-primary, "color-secondary": vars.$color-secondary,"color-tertiary": vars.$color-tertiary, "color-light": vars.$color-light, "color-white": vars.$color-white, "color-dark": vars.$color-dark, "color-danger": vars.$color-danger, "color-star": vars.$color-star);
             @each $name, $color in $colors{
-                .color-#{$name}{
+                .#{$name}{
                     width: 100%;
                     height: 100px;
                     background-color: $color;
                     border: 1px solid vars.$color-dark;
                     border-radius: vars.$border-radius-sm; 
+                    &:before{
+                        content: "{$name}";
+                    }
                 }
             }
         }
