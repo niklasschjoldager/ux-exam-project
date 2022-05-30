@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as vars;
+
+.account-page {
+  padding-block: vars.$nav-height;
+
+  .site-content {
+    padding-inline: vars.$space-xl;
+    @media screen and (min-width: vars.$breakpoint-md) {
+      display: grid;
+      grid-template-columns: 300px auto;
+    }
+  }
+
+  section {
+    margin: 0;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .content-header {
+    &__actions {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding-inline: vars.$space-xl;
+      padding-block: vars.$space-xs;
+      gap: vars.$space-md;
+      box-shadow: vars.$box-shadow;
+      background-color: vars.$color-light;
+      z-index: 1;
+    }
+
+    &__cancel {
+      text-decoration: none;
+      color: vars.$color-dark;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    &__submit {
+      background-color: vars.$color-primary;
+      border: none;
+      border-radius: vars.$border-radius-md;
+      padding-inline: vars.$space-xl;
+      padding-block: vars.$space-xs;
+      color: vars.$color-light;
+    }
+  }
+}

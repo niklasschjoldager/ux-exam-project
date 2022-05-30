@@ -14,13 +14,13 @@
     <main>
       <h1>Styletile</h1>
 
-      <section id="fonts">
+      <section class="styletile__fonts">
         <h2>Fonts</h2>
         <h1>"Yeseva One" as display font</h1>
         <p>"Palanquin" as body font</p>
       </section>
 
-      <section id="colors">
+      <section class="styletile__colors">
         <h2>Colors</h2>
         <div class="color-wrapper">
             <div class="color-color-primary"></div>
@@ -32,37 +32,149 @@
         </div>
       </section>
 
-      <section id="UI-elements">
-          <h2>UI-elements</h2>
-          
+      <section class="styletile__elements">
+        <h2>UI-elements</h2>
+
+        <article>
+            <h3>Buttons:</h3>
+            <button class="modal__button" type="submit">sign in</button>
+            <button class="modal__button" type="submit">sign up</button>
+        </article>
+
+        <article>
+            <h3>Search fields:</h3>
+                <div class="hero-banner__seachfield-wrapper elements-searchfield">
+                    <input class="hero-banner__searchfield" type="text" name="search" autocomplete="off">
+                    <svg class="hero-banner__searchicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g>
+                            <rect width="24" height="24" opacity="0"/>
+                            <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"/>
+                            </g>
+                        </svg>
+                </div>
+
+            <form class="search">
+                <input class="search__input" type="text" placeholder="Search for a recipe..." />
+                <button class="search__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                      <rect width="24" height="24" opacity="0" />
+                      <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z" />
+                    </g>
+                  </svg>
+                </button>
+              </form>
+        </article>
+
+        <article>
+            <h3>Icons:</h3>
+            <div class="icons-wrapper">
+                <div class="burger_icon"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                    <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"/>
+                    <path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18zM12 16.1a.92.92 0 0 1 .46.11l3.77 2-.72-4.21a1 1 0 0 1 .29-.89l3-2.93-4.2-.62a1 1 0 0 1-.71-.56L12 5.25 10.11 9a1 1 0 0 1-.75.54l-4.2.62 3 2.93a1 1 0 0 1 .29.89l-.72 4.16 3.77-2a.92.92 0 0 1 .5-.04z"/>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="email"><rect width="24" height="24" opacity="0"/><path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="lock"><rect width="24" height="24" opacity="0"/><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1z"/><path d="M12 12a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="person"><rect width="24" height="24" opacity="0"/><path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/><path d="M12 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                    <rect width="24" height="24" opacity="0"/>
+                    <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"/>
+                    </g>
+                </svg>
+            </div>  
+        
+        </article>
+        
+
       </section>
 
-      <section id="form">
+      <section class="styletile__forms">
         <h2>Form elements</h2>
-        <form>
-          <label class="form-field form-field--right-icon">
-            <span class="form-field__label">Cook time</span>
-            <div class="form-field__control">
-              <input class="form-field__input" type="text" placeholder="1 hour" />
-              <img src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
-            </div>
-          </label>
-          <label class="form-field form-field--left-icon">
-            <span class="form-field__label">Prep time</span>
-            <div class="form-field__control">
-              <input class="form-field__input" type="text" placeholder="1 hour" />
-              <img src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
-            </div>
-          </label>
-          <label class="form-field">
-            <span class="form-field__label">Cook time</span>
-            <div class="form-field__control">
+        <label class="form-field">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
               <input class="form-field__input" type="text" placeholder="1 hour" />
             </div>
-          </label>
-        </form>
+          </div>
+        </label>
+    
+        <label class="form-field form-field--right-icon">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <button class="form-field__button form-field__button--input" type="button">
+                <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+              </button>
+            </div>
+          </div>
+        </label>
+    
+        <label class="form-field form-field--left-icon">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <button class="form-field__button form-field__button--input" type="button">
+                <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+              </button>
+            </div>
+          </div>
+        </label>
+    
+        <label class="form-field">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+            </div>
+            <button class="form-field__button" type="button">
+              <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+            </button>
+          </div>
+        </label>
+    
+        <label class="form-field form-field--left-icon">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <button class="form-field__button form-field__button--input" type="button">
+                <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+              </button>
+            </div>
+            <button class="form-field__button" type="button">
+              <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+            </button>
+          </div>
+        </label>
+        <label class="form-field form-field--right-icon">
+          <span class="form-field__label">Cook time</span>
+          <div class="form-field__control">
+            <div class="form-field__input-container">
+              <input class="form-field__input" type="text" placeholder="1 hour" />
+              <button class="form-field__button form-field__button--input" type="button">
+                <img height="24" width="24" src="./icons/menu.svg" alt="Move field" class="form-field__icon" />
+              </button>
+            </div>
+            <button class="form-field__button" type="button">
+              <img height="24" width="24" src="./icons/trash.svg" alt="Delete field" class="form-field__icon" />
+            </button>
+          </div>
+        </label>
       </section>
 
     </main>
+    <footer class="footer">
+        <div>
+            <p class="footer__logo">Cooklish<span class="footer__logo-seperator">|</span><span class="footer__logo-text">Share your recipes with the world</span></p>
+        </div>
+    </footer>
   </body>
 </html>

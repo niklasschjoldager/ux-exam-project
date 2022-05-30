@@ -3,13 +3,19 @@
 .modal{
     width: 80%;
     max-width: 500px;
-    margin: vars.$space-2xl auto;
+    margin: vars.$space-4xl auto;
     padding: vars.$space-3xl;
     border-radius: vars.$border-radius-bg;
     background-color: vars.$color-white;
     border: none;
     box-shadow: vars.$box-shadow;
     z-index: 100;
+
+    &__close{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
     &__title{
         text-align: center;
     }
@@ -83,8 +89,9 @@
         text-align: center;
         color: vars.$color-primary;
     }
+
+    &::backdrop{
+        background-color: rgba(0, 0, 0, 0.50);
+    }
 }
 
-.modal::backdrop {
-    background: rgb(0 0 0 / 0.4);
-  }

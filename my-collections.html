@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="navigation_wrapper">
@@ -20,6 +19,8 @@
         <a class="logo" href="./index.html">Cooklish</a>
         <div class="burger_icon"></div>
         <nav>
+          <a class="sign-up-button">Sign up</a>
+          <a class="sign-in-button">Sign in</a>
           <a href="./explore.html">Explore</a>
           <a href="./account.html">Account</a>
           <a href="./search.html">Search</a>
@@ -27,13 +28,38 @@
       </div>
     </header>
 
-    <footer class="footer">
-      <div>
-        <p class="footer__logo">
-          Cooklish<span class="footer__logo-seperator">|</span
-          ><span class="footer__logo-text">Share your recipes with the world</span>
-        </p>
-      </div>
-    </footer>
+    <main>
+      <aside class="sidebar">
+        <div class="profile">
+          <img class="profile__image" src="#" alt="#" />
+          <h2 class="profile__name">Marie B. Henriksen</h2>
+          <ul>
+            <li>
+              <a href="#">My recipes</a>
+            </li>
+            <li>
+              <a href="#">My collections</a>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <button>Settings</button>
+          </li>
+          <li>
+            <button>Logout</button>
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <div>
+          <h1>My collections</h1>
+          <div>
+            <a href="#">Cancel</a>
+            <button>Save</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
