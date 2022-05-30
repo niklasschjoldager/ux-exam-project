@@ -49,7 +49,7 @@ async function displayPopularRecipes() {
       clone.querySelector(".recipe__title").textContent = recipe.name;
       clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
       clone.querySelector(".recipe__ratings").textContent = "5 (19)";
-      clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+      clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
       document.querySelector(".popular-recipes__container").appendChild(clone);
     }
@@ -68,7 +68,7 @@ async function displayNewRecipes() {
       clone.querySelector(".recipe__title").textContent = recipe.name;
       clone.querySelector(".recipe").addEventListener("click", () => showRecipe(recipe));
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-      clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+      clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
       document.querySelector(".new-recipes__container").appendChild(clone);
     }
@@ -93,7 +93,7 @@ async function showSearchResults() {
 
     if (recipe.type === "recipe") {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-      clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+      clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
     } else {
       clone.querySelector(".recipe__text svg").textContent = "";
       clone.querySelector(".recipe__author").textContent = "AD";
@@ -117,7 +117,7 @@ async function displayExploreRecipes() {
 
       if (recipe.type === "recipe") {
         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
-        clone.querySelector(".recipe__author").textContent = "by " + recipe.name;
+        clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
       } else {
         clone.querySelector(".recipe__text svg").textContent = "";
         clone.querySelector(".recipe__author").textContent = "AD";
