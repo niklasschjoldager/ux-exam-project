@@ -92,6 +92,7 @@
                 border-bottom: 1px solid vars.$color-light;
                 padding: 0.3rem;
                 transition: 0.3s;
+                cursor: pointer;
 
                 @media screen and (min-width: vars.$breakpoint-lg) {
                     margin-left: 1rem;
