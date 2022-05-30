@@ -35,16 +35,19 @@ $space-1xl: 2rem;
 $space-2xl: 2.5rem;
 $space-3xl: 3rem;
 $space-4xl: 4rem;
+$space-6xl: 6rem;
 $space-8xl: 8rem;
 
 $border-radius-sm: 0.5rem;
 $border-radius-md: 2rem;
 $border-radius-bg: 3rem;
+$border-radius-8xl: 8rem;
 
 $box-shadow: 2.8px 2.6px 2.2px rgba(0, 0, 0, 0.006), 6.7px 6.2px 5.3px rgba(0, 0, 0, 0.008),
   12.5px 11.6px 10px rgba(0, 0, 0, 0.01), 22.3px 20.8px 17.9px rgba(0, 0, 0, 0.012),
   41.8px 38.9px 33.4px rgba(0, 0, 0, 0.014), 100px 93px 80px rgba(0, 0, 0, 0.02);
 
+$max-width-sm: 750px;
 $max-width: 1280px;
 
 $font-body: "Palanquin", sans-serif;
