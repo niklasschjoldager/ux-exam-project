@@ -72,7 +72,7 @@
     padding-inline: vars.$space-md;
     padding-block: vars.$space-md;
     resize: vertical;
-    min-height: 10rem;
+    min-height: vars.$space-5xl * 2;
   }
 }
 
