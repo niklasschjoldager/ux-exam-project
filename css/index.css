@@ -1045,6 +1045,9 @@ section {
 .styletile article {
   margin: 1rem 0;
 }
+.styletile .recipe {
+  max-width: 352px;
+}
 .styletile__fonts h1 {
   margin-top: 0;
   line-height: 2.75rem;

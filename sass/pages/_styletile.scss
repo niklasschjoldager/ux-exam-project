@@ -1,69 +1,77 @@
 @use "../abstracts/variables" as vars;
 
 .styletile {
+  article {
+    margin: vars.$space-md 0;
+  }
 
-    article{
-        margin: vars.$space-md 0;
+  .recipe {
+    max-width: 352px;
+  }
+
+  &__fonts {
+    h1 {
+      margin-top: 0;
+      line-height: vars.$text-height-5xl;
+    }
+  }
+
+  &__colors {
+    .color-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: vars.$space-3xl;
+      margin-top: vars.$space-lg;
+
+      $colors: (
+        "color-primary": vars.$color-primary,
+        "color-secondary": vars.$color-secondary,
+        "color-tertiary": vars.$color-tertiary,
+        "color-light": vars.$color-light,
+        "color-white": vars.$color-white,
+        "color-dark": vars.$color-dark,
+        "color-danger": vars.$color-danger,
+        "color-star": vars.$color-star,
+      );
+      @each $name, $color in $colors {
+        .#{$name} {
+          width: 100%;
+          height: 100px;
+          background-color: $color;
+          border: 1px solid vars.$color-dark;
+          border-radius: vars.$border-radius-sm;
+          &:after {
+            content: "#{$name}";
+            padding: vars.$space-md;
+          }
+        }
+        .color-dark:after {
+          color: vars.$color-light;
+        }
+      }
+    }
+  }
+
+  &__elements {
+    .elements-searchfield {
+      position: relative;
+      width: fit-content;
+      background-color: vars.$color-primary;
+      padding: vars.$space-xxs;
     }
 
-    &__fonts{
-        h1{
-            margin-top: 0;
-            line-height: vars.$text-height-5xl;
-        }
+    .icons-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+      grid-gap: vars.$space-3xl;
+      margin-top: vars.$space-lg;
+      .burger_icon {
+        display: block !important;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
-    
-
-    &__colors{
-        .color-wrapper{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: vars.$space-3xl;
-            margin-top: vars.$space-lg;
-    
-            $colors:  ("color-primary": vars.$color-primary, "color-secondary": vars.$color-secondary,"color-tertiary": vars.$color-tertiary, "color-light": vars.$color-light, "color-white": vars.$color-white, "color-dark": vars.$color-dark, "color-danger": vars.$color-danger, "color-star": vars.$color-star);
-            @each $name, $color in $colors{
-                .#{$name}{
-                    width: 100%;
-                    height: 100px;
-                    background-color: $color;
-                    border: 1px solid vars.$color-dark;
-                    border-radius: vars.$border-radius-sm;
-                    &:after{
-                        content: "#{$name}";
-                        padding: vars.$space-md;
-                        
-                    }
-                }
-                .color-dark:after{
-                    color: vars.$color-light;
-                }
-            }
-        }
-
-    }
-
-    &__elements{
-        .elements-searchfield{
-            position: relative;
-            width: fit-content;
-            background-color: vars.$color-primary;
-            padding: vars.$space-xxs;
-        }
-
-        .icons-wrapper{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
-            grid-gap: vars.$space-3xl;
-            margin-top: vars.$space-lg;
-            .burger_icon{
-                display: block !important;
-            }
-            svg{
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
-
+  }
 }
