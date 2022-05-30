@@ -77,7 +77,7 @@ async function displayPopularRecipes() {
 }
 
 async function displayNewRecipes() {
-  const template = document.querySelector("#frontpage-recipes-template");
+  const template = document.querySelector(".frontpage-template");
   if (!template) return;
 
   const newRecipes = await getData();
