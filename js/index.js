@@ -59,7 +59,7 @@ async function displayPopularRecipes() {
 
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
-      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
+      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
       clone.querySelector(".recipe__ratings").textContent = "5 (19)";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
@@ -79,7 +79,7 @@ async function displayNewRecipes() {
 
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
-      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
+      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
 
@@ -88,9 +88,9 @@ async function displayNewRecipes() {
   });
 }
 
-function redirectToRecipe(i) {
+function redirectToRecipe(recipeName) {
   console.log("Show recipe single view");
-  window.location.href = `/recipe-single.html?i=${i}`;
+  window.location.href = `/recipe-single.html?title=${recipeName}`;
 }
 
 async function displayRecipe() {
@@ -100,9 +100,11 @@ async function displayRecipe() {
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const recepeIndex = urlParams.get("i");
-  const selcetedRecipe = allRecipes[recepeIndex];
-  console.log(selcetedRecipe);
+  const recepeName = urlParams.get("title");
+
+  const selcetedRecipe = allRecipes.find((obj) => {
+    return obj.name === recepeName;
+  });
 
   const recipeViewSection = document.querySelector(".recipe-view");
   if (!recipeViewSection) return;
@@ -163,7 +165,7 @@ async function showSearchResults() {
     const clone = templatePointer.cloneNode(true).content;
     clone.querySelector(".recipe__image").src = "./images/" + recipe.imageURL;
     clone.querySelector(".recipe__name").textContent = recipe.name;
-    clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
+    clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
 
     if (recipe.type === "recipe") {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
@@ -192,7 +194,7 @@ async function displayExploreRecipes() {
       if (recipe.type === "recipe") {
         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
         clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
-        clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(i));
+        clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
       } else {
         clone.querySelector(".recipe__text svg").textContent = "";
         clone.querySelector(".recipe__author").textContent = "AD";
