@@ -18,41 +18,43 @@
   h1 {
     margin-top: 0;
   }
+}
 
-  .content-header {
-    &__actions {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      padding-inline: vars.$space-xl;
-      padding-block: vars.$space-xs;
-      gap: vars.$space-md;
-      box-shadow: vars.$box-shadow;
-      background-color: vars.$color-light;
-      z-index: 1;
+.content-header {
+  &__actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: vars.$space-xl;
+    padding-block: vars.$space-xs;
+    gap: vars.$space-md;
+    box-shadow: vars.$box-shadow;
+    background-color: vars.$color-light;
+    z-index: 1;
+  }
+
+  &__cancel {
+    text-decoration: none;
+    color: vars.$color-dark;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
+  }
 
-    &__cancel {
-      text-decoration: none;
-      color: vars.$color-dark;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-      }
-    }
-
-    &__submit {
-      background-color: vars.$color-primary;
-      border: none;
-      border-radius: vars.$border-radius-md;
-      padding-inline: vars.$space-xl;
-      padding-block: vars.$space-xs;
-      color: vars.$color-light;
-    }
+  &__submit {
+    background-color: vars.$color-primary;
+    border: none;
+    border-radius: vars.$border-radius-md;
+    padding-inline: vars.$space-xl;
+    padding-block: vars.$space-xs;
+    color: vars.$color-light;
   }
 }

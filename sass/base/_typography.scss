@@ -5,53 +5,54 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin-bottom: vars.$space-md;
-    font-family: vars.$font-title;
+h6,
+legend {
+  margin-bottom: vars.$space-md;
+  font-family: vars.$font-title;
 }
 
-h1{
-    text-align: center;
-    font-size: vars.$text-5xl;
-    margin-top: vars.$space-8xl;
+h1 {
+  text-align: center;
+  font-size: vars.$text-5xl;
+  margin-top: vars.$space-8xl;
 }
 
 .text-sm {
-    font-size: vars.$text-sm;
-    line-height: vars.$text-height-sm;
+  font-size: vars.$text-sm;
+  line-height: vars.$text-height-sm;
 }
 
 .text-base {
-    font-size: vars.$text-base;
-    line-height: vars.$text-height-base;
+  font-size: vars.$text-base;
+  line-height: vars.$text-height-base;
 }
 
 .text-lg {
-    font-size: vars.$text-lg;
-    line-height: vars.$text-height-lg;
+  font-size: vars.$text-lg;
+  line-height: vars.$text-height-lg;
 }
 
 .text-xl {
-    font-size: vars.$text-xl;
-    line-height: vars.$text-height-2xl;
+  font-size: vars.$text-xl;
+  line-height: vars.$text-height-2xl;
 }
 
 .text-2xl {
-    font-size: vars.$text-2xl;
-    line-height: vars.$text-height-2xl;
+  font-size: vars.$text-2xl;
+  line-height: vars.$text-height-2xl;
 }
 
 .text-3xl {
-    font-size: vars.$text-3xl;
-    line-height: vars.$text-height-3xl;
+  font-size: vars.$text-3xl;
+  line-height: vars.$text-height-3xl;
 }
 
 .text-4xl {
-    font-size: vars.$text-4xl;
-    line-height: vars.$text-height-4xl;
+  font-size: vars.$text-4xl;
+  line-height: vars.$text-height-4xl;
 }
 
 .text-5xl {
-    font-size: vars.$text-5xl;
-    line-height: vars.$text-height-5xl;
+  font-size: vars.$text-5xl;
+  line-height: vars.$text-height-5xl;
 }

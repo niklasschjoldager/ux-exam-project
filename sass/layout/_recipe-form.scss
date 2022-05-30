@@ -2,11 +2,10 @@
 
 .recipe-form {
   display: grid;
-  gap: vars.$space-sm;
-
+  gap: vars.$space-3xl;
+  padding-block: vars.$space-xl;
   &__section {
     border: none;
-    padding-block: vars.$space-xl;
     display: flex;
     flex-direction: column;
     gap: vars.$space-sm;

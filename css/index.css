@@ -26,7 +26,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+legend {
   margin-bottom: 1rem;
   font-family: "Yeseva One", cursive;
 }
@@ -152,6 +153,36 @@ h1 {
   flex-grow: 1;
   position: relative;
   align-items: center;
+}
+.form-field__textarea {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  resize: vertical;
+  min-height: 10rem;
+}
+
+.form-image-picker {
+  display: grid;
+  width: 100%;
+}
+.form-image-picker__container {
+  display: flex;
+  gap: 1rem;
+}
+.form-image-picker__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.form-image-picker__remove-button {
+  font-size: 0.875rem;
+}
+.form-image-picker__image {
+  border-radius: 9999px;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
 }
 
 .navigation_wrapper {
@@ -387,11 +418,11 @@ section {
 
 .recipe-form {
   display: grid;
-  gap: 0.75rem;
+  gap: 3rem;
+  padding-block: 1.5rem;
 }
 .recipe-form__section {
   border: none;
-  padding-block: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -498,7 +529,8 @@ section {
 .account-page h1 {
   margin-top: 0;
 }
-.account-page .content-header__actions {
+
+.content-header__actions {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -513,14 +545,16 @@ section {
   background-color: #f5f5f5;
   z-index: 1;
 }
-.account-page .content-header__cancel {
+.content-header__cancel {
   text-decoration: none;
   color: #000000;
+  display: inline-flex;
+  align-items: center;
 }
-.account-page .content-header__cancel:hover, .account-page .content-header__cancel:focus {
+.content-header__cancel:hover, .content-header__cancel:focus {
   text-decoration: underline;
 }
-.account-page .content-header__submit {
+.content-header__submit {
   background-color: #579e93;
   border: none;
   border-radius: 2rem;
@@ -796,6 +830,10 @@ section {
 .styletile__elements .icons-wrapper svg {
   width: 20px;
   height: 20px;
+}
+
+.delete-account {
+  color: #d42447;
 }
 
 /*# sourceMappingURL=index.css.map */

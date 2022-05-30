@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/index.js" defer></script>
   </head>
   <body class="page-settings">
     <header class="navigation_wrapper">
@@ -52,13 +53,92 @@
         </ul>
       </aside>
       <section>
-        <div>
+        <div class="content-header">
           <h1>Settings</h1>
-          <div>
-            <a href="#">Cancel</a>
-            <button>Save</button>
+          <div class="content-header__actions">
+            <a class="content-header__cancel text-sm" href="./account.html">Cancel</a>
+            <button class="content-header__submit">Save</button>
           </div>
         </div>
+        <form class="recipe-form" action="#">
+          <fieldset class="recipe-form__section">
+            <legend class="text-2xl recipe-form__title">About</legend>
+            <label class="form-field">
+              <span class="form-field__label">Name</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input
+                    class="form-field__input"
+                    name="name"
+                    type="text"
+                    value="Marie B. Henriksen"
+                    placeholder="Enter your name"
+                  />
+                </div>
+              </div>
+            </label>
+
+            <label class="form-image-picker">
+              <span class="form-image-picker__label">Image</span>
+              <div class="form-image-picker__container">
+                <img class="form-image-picker__image" src="./images/marie-profile-pic.png" alt="Marie B Henriksen" />
+                <div class="form-image-picker__actions">
+                  <input class="form-image-picker__select-image" name="image" type="file" />
+                  <a class="form-image-picker__remove-button" href="#">Remove image</a>
+                </div>
+              </div>
+            </label>
+
+            <label class="form-field">
+              <span class="form-field__label">Biography</span>
+              <textarea class="form-field__textarea" name="biography" placeholder="Enter your biography"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class="recipe-form__section">
+            <legend class="text-2xl recipe-form__title">Change Password</legend>
+            <label class="form-field">
+              <span class="form-field__label">Old password</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input
+                    class="form-field__input"
+                    type="password"
+                    name="oldPassword"
+                    placeholder="Enter old password"
+                  />
+                </div>
+              </div>
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">New password</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input
+                    class="form-field__input"
+                    type="password"
+                    name="newPassword"
+                    placeholder="Enter new password"
+                  />
+                </div>
+              </div>
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Repeat new password</span>
+              <div class="form-field__control">
+                <div class="form-field__input-container">
+                  <input
+                    class="form-field__input"
+                    type="password"
+                    name="repeatNewPassword"
+                    placeholder="Repeat new password"
+                  />
+                </div>
+              </div>
+            </label>
+          </fieldset>
+        </form>
+        <a class="delete-account" href="#">Delete account</a>
       </section>
     </main>
   </body>
