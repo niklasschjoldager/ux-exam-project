@@ -155,7 +155,7 @@ async function showSearchResults() {
   const templatePointer = document.querySelector(".recipes-template");
   const sectionPointer = document.querySelector(".results");
 
-  if (!templatePointer || sectionPointer) return;
+  if (!templatePointer) return;
 
   let jsonData = await getData();
   sectionPointer.innerHTML = "";
