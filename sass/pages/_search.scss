@@ -75,4 +75,15 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: vars.$space-3xl;
     margin-top: vars.$space-lg;
+    .recipe{
+        position: relative;
+        &__chip{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .2rem .7rem;
+            background-color: vars.$color-secondary;
+            font-size: vars.$text-sm;
+        }
+    }
 }

@@ -15,4 +15,15 @@
     &__category{
         font-size: vars.$text-3xl;
     }
+    .recipe{
+        position: relative;
+        &__chip{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .2rem .7rem;
+            background-color: vars.$color-secondary;
+            font-size: vars.$text-sm;
+        }
+    }
 }

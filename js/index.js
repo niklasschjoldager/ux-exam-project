@@ -52,6 +52,7 @@ async function displayPopularRecipes() {
   if (!template) return;
 
   const popularRecipes = await getData();
+  console.log(popularRecipes)
 
   popularRecipes.forEach((recipe, i) => {
     if (i <= 2) {
@@ -59,9 +60,16 @@ async function displayPopularRecipes() {
 
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
-      clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
-      clone.querySelector(".recipe__ratings").textContent = "5 (19)";
-      clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+
+      if (recipe.type === "recipe") {
+        clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
+        clone.querySelector(".recipe__ratings").textContent = "5 (19)";
+        clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+        clone.querySelector(".recipe__chip").remove();
+      } else {
+        clone.querySelector(".recipe__text svg").textContent = "";
+        clone.querySelector(".recipe__author").textContent = "AD";
+      }
 
       document.querySelector(".popular-recipes__container").appendChild(clone);
     }
@@ -73,15 +81,23 @@ async function displayNewRecipes() {
   if (!template) return;
 
   const newRecipes = await getData();
-  newRecipes.forEach((recipe, i) => {
-    if (i >= 3 && i <= 5) {
-      const clone = template.cloneNode(true).content;
+  const randomizedData = newRecipes.sort(() => Math.random() - Math.random()).slice(0, 3);
 
+  randomizedData.forEach((recipe, i) => {
+    if (i <= 3) {
+      const clone = template.cloneNode(true).content;
       clone.querySelector(".recipe__img").src = `./images/${recipe.imageURL}`;
       clone.querySelector(".recipe__title").textContent = recipe.name;
+
+      if (recipe.type === "recipe") {
       clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+      clone.querySelector(".recipe__chip").remove();
+      } else {
+        clone.querySelector(".recipe__text svg").textContent = "";
+        clone.querySelector(".recipe__author").textContent = "AD";
+      }
 
       document.querySelector(".new-recipes__container").appendChild(clone);
     }
@@ -95,8 +111,7 @@ function redirectToRecipe(recipeName) {
 
 async function displayRecipe() {
   const allRecipes = await getData();
-  console.log("_____________________");
-  console.log(allRecipes);
+
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -160,6 +175,8 @@ async function showSearchResults() {
   if (!templatePointer) return;
 
   let jsonData = await getData();
+  jsonData = jsonData.sort(() => Math.random() - Math.random()).slice(0, 14);
+
   sectionPointer.innerHTML = "";
   jsonData.forEach((recipe, i) => {
     const clone = templatePointer.cloneNode(true).content;
@@ -170,6 +187,7 @@ async function showSearchResults() {
     if (recipe.type === "recipe") {
       clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
       clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
+      clone.querySelector(".recipe__chip").remove();
     } else {
       clone.querySelector(".recipe__text svg").textContent = "";
       clone.querySelector(".recipe__author").textContent = "AD";
@@ -195,6 +213,7 @@ async function displayExploreRecipes() {
         clone.querySelector(".recipe__ratings").textContent = getReviews(recipe) + " (" + recipe.reviews.length + ")";
         clone.querySelector(".recipe__author").textContent = "by " + recipe.author;
         clone.querySelector(".recipe").addEventListener("click", () => redirectToRecipe(recipe.name));
+        clone.querySelector(".recipe__chip").remove();
       } else {
         clone.querySelector(".recipe__text svg").textContent = "";
         clone.querySelector(".recipe__author").textContent = "AD";
