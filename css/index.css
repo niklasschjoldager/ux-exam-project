@@ -1062,8 +1062,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-primary:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-primary:after {
+  content: "color-primary";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-secondary {
   width: 100%;
@@ -1072,8 +1076,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-secondary:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-secondary:after {
+  content: "color-secondary";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-tertiary {
   width: 100%;
@@ -1082,8 +1090,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-tertiary:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-tertiary:after {
+  content: "color-tertiary";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-light {
   width: 100%;
@@ -1092,8 +1104,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-light:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-light:after {
+  content: "color-light";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-white {
   width: 100%;
@@ -1102,8 +1118,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-white:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-white:after {
+  content: "color-white";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-dark {
   width: 100%;
@@ -1112,8 +1132,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-dark:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-dark:after {
+  content: "color-dark";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-danger {
   width: 100%;
@@ -1122,8 +1146,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-danger:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-danger:after {
+  content: "color-danger";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__colors .color-wrapper .color-star {
   width: 100%;
@@ -1132,8 +1160,12 @@ section {
   border: 1px solid #000000;
   border-radius: 0.5rem;
 }
-.styletile__colors .color-wrapper .color-star:before {
-  content: "{$name}";
+.styletile__colors .color-wrapper .color-star:after {
+  content: "color-star";
+  padding: 1rem;
+}
+.styletile__colors .color-wrapper .color-dark:after {
+  color: #f5f5f5;
 }
 .styletile__elements .elements-searchfield {
   position: relative;
